@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FRIDAY-Mirror</title>
+    <style>
+        *{
+            background: black;
+        }
+        html{
+            background: black;
+        }
+        .particule {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 1rem;
+          height: 1rem;
+          margin: -.5rem 0 0 -.5rem;
+          border: 1px solid currentColor;
+          transform: scale(0);
+        }
+        #face{
+            height: 500px;
+
+            margin-top: -10px;
+        }
+        .headline{
+            text-align: center;
+            color: whitesmoke;
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Include eel.js - note this file doesn't exist in the 'web' directory -->
+        <script type="text/javascript" src="/eel.js"></script>
+		<script type="text/javascript" src="GUI.js"></script>
+        <script src="anime.min.js"></script>
+        <script src="baffle.min.js"></script>
+         <script src="typed.js"></script>
+		<script type="text/javascript">
+
+            var animate =null
+            eel.expose(eelprint); // Expose this function to Python
+		  function eelprint(text) {
+            console.log(text)
+          }
+
+          function startup(){
+		    console.log("AYYY SRAT")
+            openFullscreen()
+            /*showlistening() */
+
+          }
+          eel.expose(typetext)
+          function typetext(text) {
+		      var options = {
+          strings: [text],
+          typeSpeed: 40,
+                  showCursor:false
+            }
+
+            var typed = new Typed(".headline", options);
+
+          }
+
+          eel.expose(showlistening)
+          function showlistening(){
+		      var maxElements = 60;
+            var duration = 1100;
+            var toAnimate = [];
+            var radius = window.innerWidth < window.innerHeight ? window.innerWidth : window.innerHeight;
+            var distance = radius / 4 <= 150 ? 150 : radius / 4;
+            /* var colors = ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C'];*/
+            var colors = ['#f5f5f5']
+
+            var createElements = (function() {
+              var fragment = document.createDocumentFragment();
+              for (var i = 0; i < maxElements; i++) {
+                var el = document.createElement('div');
+                el.classList.add('particule');
+                el.style.color = colors[anime.random(0, 3)];
+                el.style.color = "#f5f5f5";
+                toAnimate.push(el);
+                fragment.appendChild(el);
+              }
+              document.getElementById("face").appendChild(fragment);
+            })();
+
+            animate = function(el, i) {
+              var angle = Math.random() * Math.PI * 2;
+              anime({
+                targets: el,
+                translateX: [0, Math.cos(angle) * distance],
+                translateY: [0, Math.sin(angle) * distance],
+                scale: [
+                  {value: [0, 1], duration: 400, easing: 'easeOutBack'},
+                  {value: 0, duration: 400, delay: duration - 800, easing: 'easeInBack'}
+                ],
+                offset: (duration / maxElements) * i,
+                duration: duration,
+                easing: 'easeOutSine',
+                loop: true
+              });
+            }
+            toAnimate.forEach(animate);
+          }
+
+          eel.expose(stoplistening)
+            function stoplistening(){
+                cleardiv("face")
+            }
+
+
+
+
+    </script>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="startup()">
+    <div id="face"></div>
+    <h1 class="headline"></h1>
+</body>
+</html>
