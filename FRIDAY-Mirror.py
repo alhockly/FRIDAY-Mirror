@@ -1,20 +1,6 @@
-#
-# Copyright 2018 Picovoice Inc.
-#
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
-#
-#     http://www.apache.org/licenses/LICENSE-2.0
-#
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-#
-
 import subprocess
+from _multiprocessing import send
+
 import eel
 import argparse
 import os
@@ -23,10 +9,9 @@ import struct
 import sys
 from datetime import datetime
 from threading import Thread
-
 import numpy as np
-import pyaudio
 import soundfile
+from forex_python.bitcoin import BtcConverter
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'binding/python'))
 from porcupine import Porcupine
@@ -34,8 +19,19 @@ import pyaudio
 import wave
 import simpleaudio as sa
 import speech_recognition as sr
+from xml.dom import minidom
+import xml.etree.ElementTree as ET
+import requests
+from forex_python.converter import CurrencyRates
+from selenium import webdriver
+from selenium.webdriver.support.ui import Select
+from seleniumrequests import Chrome
+from selenium.webdriver.chrome.options import Options
 
 inconvo=False
+
+browser=None
+
 
 class PorcupineDemo(Thread):
 
@@ -190,23 +186,136 @@ def playbeep():
     play_obj = wave_obj.play()
     play_obj.wait_done()
 
+class Audioresponse():
+
+    def __init__(self):
+        self.speechtext=""
+        self.flags=[]
+        self.currenciesinspeech=[]
+        self.nodes=[]
+        self.verbs=[]
+        self.vals=[]
+        self.numbers=[]
+        self.contextdata=[]
 
 class AudioRecognition(Thread):
 
     def __init__(self):
         Thread.__init__(self)
-        #TODO compile grammar XML to get devices
 
-    def handleinput(self,speech):
-        speech=speech.replace("+","plus")
+    def handleinput(self):                   ###stop face animation b4 returning       ###analyse speech and detect elements relavant to filters, these elemenrs are appended to resp obj as are filters
+        global audresp
+
+        speech=audresp.speechtext.replace("+","plus").lower()
+
+        response=None
+        eel.yousaid(speech)
+
+        cancellist=["shut up","cancel","stop listening"]
+        currency=["£","$","bitcoin","litecoin","dollars","pounds"]
+        if any(ext in speech for ext in cancellist):
+            eel.fridaysaid("cancelling")
+            return
+
+        if "opendirfilechoice" in audresp.flags:
+            if "download" in audresp.speechtext:            ##if download and a number in speech interpret as download instruction
+                print("download ing")
+                audresp=AudioRecognition()
+                eel.stoplistening()
+                return
+            else:
+                eel.fridaysaid("Would you like to select a file?")
+                for file in audresp.contextdata[0]:
+                    print(file["name"],file["url"])
+
+                speechrec.startdetection()
+
+            return
+
+
+
+
+        currencycount=0
+        currenciesinspeech=[]
+        for str in currency:
+            if str in speech:
+                currenciesinspeech.append(str)
+                currencycount+=1
+        if currencycount==2 and any(char.isdigit() for char in speech):             #there are two currencies and a number
+
+            #audresp.flags.append("currencyconversion")
+            audresp.currenciesinspeech=currenciesinspeech
+            speech=speech.replace("£","").replace("$","")
+            numbers = []
+            for t in speech.split():                #TODO replace with regex and do earlier
+                try:
+                    t = t.replace(",", "")
+                    numbers.append(float(t))
+                except ValueError:
+                    pass
+            audresp.numbers = numbers
+            if len(numbers)==1:
+                print("converting",numbers[0],"from",currenciesinspeech[0],"to",currenciesinspeech[1])
+                newamount = Webfunctions().currencyconverter()
+                print(newamount)
+                eel.fridaysaid(newamount)
+            else:
+
+                eel.fridaysaid("error finding conversion amount")
+                print("too many or not enough numbers in input")
+            eel.stoplistening()
+            return
+
+
+        ######## Open Directory Search
+
+        if "open directories" in speech and "search" in speech:
+            pass
+            if "for" in speech:
+                term=speech[speech.index("for")+3:]
+                if len(term)>3:
+                    Webfunctions().opendirsearch(term)
+
+            #TODO sign up to google search api, use selenium to investigate results
+
+
+
+
+
+        for node in nodeman.nodelist:
+            if any(ext in speech for ext in node.verblist) and node.name in speech:     ###if speech contains a node name and one of its verbs
+                #audresp.flags.append("nodecommand")
+
+
+                for verb in node.verblist:  ##find which verb it was                    ##detect elements
+                    if verb in speech:
+                        selectedverb=verb
+                        break
+                for val in node.vallist:    ##find val it was
+                    if val in speech:
+                        selectedvalue=val
+                        break
+
+                audresp.verbs.append(selectedvalue)                                     ##append to audio response object
+                audresp.nodes.append(node)
+                audresp.vals.append(selectedvalue)
+                print("ayy u talking about",node.name,"and u tryna",selectedverb,selectedvalue)
+                response="doing a thing to a node lol"
+                nodeman.send(node.name,selectedverb,selectedvalue)
+                break
+
+        ####resolution
+
+
+
+        print("audio response handler closing")
+
         eel.stoplistening()
-        eel.typetext(speech)
-        pass
+        eel.fridaysaid(response)
 
     def startdetection(self):
-
+        global audresp
         inconvo=True
-
         r = sr.Recognizer()
         with sr.Microphone() as source:
             print("Listening")
@@ -221,13 +330,14 @@ class AudioRecognition(Thread):
             # instead of `r.recognize_google(audio)`
             speech=r.recognize_google(audio)
             print("\"" + speech+"\"")
-            self.handleinput(speech)
+            audresp.speechtext=speech
+            self.handleinput()
 
         except sr.UnknownValueError:
             print("Google Speech Recognition could not understand audio")
             inconvo=False
             eel.stoplistening()
-            eel.typetext("Couldnt understand audio")
+            eel.yousaid("Couldnt understand audio")
         except sr.RequestError as e:
             print("Could not request results from Google Speech Recognition service; {0}".format(e))
             inconvo=False
@@ -276,20 +386,175 @@ class GUITHREAD(Thread):
         #eel.sleep(4)
 
 
-speechrec=AudioRecognition()
+class NodeManager(Thread):
+
+    def __init__(self):
+        Thread.__init__(self)
+        self.nodelist=[]
+
+    def setupgrammar(self):
+        root = ET.parse('Nodes.xml').getroot()
+        for child in root.iter("Node"):
+            name=child.find("FName").text
+            mac=child.find("Mac").text
+            ip=child.find("IP").text
+            verbs=child.find("Verbs").text.split(",")
+            vals=child.find("Vals").text.split(",")
+            self.nodelist.append(Node(name,mac,ip,verbs,vals))
+
+    def findnodes(self):
+        for node in self.nodelist:
+            pass
+            if node.online == None or node.online == False:
+                pass
+                #ping each node to check inkine
+
+    #TODO method to find nodes on local network via mac address
+
+
+    def send(self,Fname,verb,value):
+        for node in self.nodelist:
+            if node.name==Fname:
+                if node.online==None:
+                    print("node online status unknown")
+                    eel.fridaysaid("node online status unknown")
+                else:
+                    if node.online:
+                        try:
+                            r = requests.get(url="http://" + node.ip + "/" + verb + "/" + value)
+                            print(r)
+                        except Exception:
+                            print("timeout on", self.ip)
+                            eel.fridaysaid("node timed out")
+                        break
+                    else:
+                        eel.fridaysaid("node offline")
+                        print("node offline")
+
+class Node():
+
+    def __init__(self,name,mac,ip,verblist,vallist):
+        self.name=name
+        self.mac=mac
+        self.ip=ip
+        self.verblist=verblist
+        self.vallist=vallist
+        self.online=None
+
+
+
+class Webfunctions():
+
+    def __init__(self):
+        pass
+
+    def currencyconverter(self):
+        global audresp
+        currency1 = audresp.currenciesinspeech[0].replace("£", "GBP").replace("$", "USD").replace("dollars",
+                                                                                                  "USD").replace(
+            "pounds", "GBP")
+        currency2 = audresp.currenciesinspeech[1].replace("£", "GBP").replace("$", "USD").replace("dollars",
+                                                                                                  "USD").replace(
+            "pounds", "GBP")
+        amount = audresp.numbers[0]
+        crypto = ["bitcoin", "litcoin"]
+        if currency2 == "bitcoin":
+            b = BtcConverter()
+            return str(b.convert_to_btc(amount, currency1)) + " btc"
+        else:
+            c = CurrencyRates()
+            convertion = c.convert(currency1, currency2, amount)
+            return currency2.replace("GBP", "£").replace("USD", "$") + str(convertion)
+
+
+    def opendirsearch(self,term):
+
+        browser.set_page_load_timeout(20)
+        originalterm=term
+        term=term.strip()
+
+
+        filetypes = [".mp4", ".mkv"]
+
+        url="https://www.google.com/search?q=+intext:"+term+"%20intitle:%22index.of%22%20-inurl:(jsp|pl|php|html|aspx|htm|cf|shtml)"
+
+        browser.get(url)
+        #print(browser.page_source)
+
+        validlinks=[]
+        links = browser.find_elements_by_tag_name("a")
+        for link in links:
+            url=link.get_attribute("href")
+            if "/url?q" in url and "accounts.google" not in url:
+                url=url.replace("https://www.google.com/url?q=","")
+                url=url[:url.index("&sa=")]
+                url=url.replace("%25","%")
+                if "google.com" not in url:
+                    validlinks.append(url)
+
+        print(validlinks)
+        eel.fridaysaid("Searching... "+str(len(validlinks))+" sources")
+        files=[]
+        count=1
+        for link in validlinks:
+            if count==10:
+                break
+            print("link",count,"out of ",str(len(validlinks)))
+            try:
+                browser.get(link)
+                filelinks= browser.find_elements_by_tag_name("a")
+                for filelink in filelinks:
+                    ###ignore the pareent directory links an shit
+                    url = filelink.get_attribute("href")
+                    if "/" in url[-1:]:
+                        continue
+
+                    if any(ext in url[-4:] for ext in filetypes):
+
+                        origterms = originalterm.lower().split()
+                        if all(term in url.lower() for term in origterms):
+                            urlparts=url.split("/")
+                            name=urlparts[len(urlparts)-1]
+                            files.append({"name":name,"url":url})
+                            print("got",str(len(files)),"files")
+
+            except Exception:
+                print("page probably failed to load or timed out")
+            count+=1
+
+        eel.fridaysaid("Got "+str(len(files))+" matching links")
+        eel.stoplistening()
+
+        ###TODO follow up file selection
+
+        audresp.flags.append("opendirfilechoice")
+        audresp.contextdata.append(files)
+        speechrec.handleinput()
+
+
+
 
 if __name__ == '__main__':
     startgui = GUIstartClass()
     startgui.start()
-    #eel.sleep(3)
     guithread=GUITHREAD()
     guithread.start()
     speechrec=AudioRecognition()
+    nodeman = NodeManager()
+    nodeman.setupgrammar()
+    audresp = Audioresponse()
+
+    chrome_options = Options()
+    #chrome_options.add_argument("headless")
+    chrome_options.add_argument("--window-size=20,20")
+    chrome_options.add_experimental_option("prefs", {'profile.managed_default_content_settings.javascript': 2})
+    chrome_options.add_argument(
+        "user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36")
+    chrome_options.add_argument("--disable-javascript")
+    browser = Chrome(chrome_options=chrome_options)
 
     parser = argparse.ArgumentParser()
-
     parser.add_argument('--keyword_file_paths', help='comma-separated absolute paths to keyword files', type=str)
-
     parser.add_argument(
         '--library_path',
         help="absolute path to Porcupine's dynamic library",
@@ -314,7 +579,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    args.keyword_file_paths="friday_windows.ppn"
+    args.keyword_file_paths="friday_windows.ppn"                ######HERE IS SOME HARDCODING SO THE PY CAN BE RUN FROM THE IDE #TODO remove I guess
 
     if args.show_audio_devices_info:
         PorcupineDemo.show_audio_devices_info()
@@ -336,5 +601,3 @@ if __name__ == '__main__':
             sensitivities=sensitivities,
             output_path=args.output_path,
             input_device_index=args.input_audio_device_index).run()
-
-
