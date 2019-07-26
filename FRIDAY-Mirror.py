@@ -30,14 +30,15 @@ from selenium.webdriver.chrome.options import Options
 import socket
 from kamene.all import *
 from netaddr import IPNetwork
-
-
+import geocoder
+from weather import Weather,Unit
 
 
 inconvo=False
 
 browser=None
 
+latlong=None
 
 class PorcupineDemo(Thread):
 
@@ -165,7 +166,6 @@ class PorcupineDemo(Thread):
 
         pa.terminate()
 
-
 def _default_library_path():
     system = platform.system()
     machine = platform.machine()
@@ -226,28 +226,41 @@ class AudioRecognition(Thread):
         if "opendirfilechoice" in audresp.flags:
             if "download" in audresp.speechtext:            ##if download and a number in speech interpret as download instruction
                 print("download ing")
-                audresp=Audioresponse()
-                eel.stoplistening()
 
                 ###TODO follow up file selection, link to J downloader?
+                audresp=Audioresponse()
+                eel.stoplistening()
 
                 return
             else:
                 eel.fridaysaid("Would you like to select a file?")
+                longest=0
                 for file in audresp.contextdata[0]:
-                    print(file["name"],file["url"])
+                    if len(file["name"])>longest:
+                        longest=len(file["name"])
+                for file in audresp.contextdata[0]:
+                    name = file["name"]
+                    print(f"{name:<{longest}}",file["url"])
 
                 speechrec.startdetection()
 
             return
 
+        #TODO add timer that clears the context
+        if "clear context" in audresp.speechtext:
+            audresp=Audioresponse()
+            eel.stoplistening()
+            return
 
         if "scan for nodes" in audresp.speechtext:
             nodeman.scanfornodes()
             eel.stoplistening()
             return
 
-
+        if "what" in audresp.speechtext and "temperature" in audresp.speechtext:
+            Webfunctions().gettemp()
+            eel.stoplistening()
+            return
 
         currencycount=0
         currenciesinspeech=[]
@@ -490,6 +503,25 @@ class Webfunctions():
     def __init__(self):
         pass
 
+    def getlocation(self):
+        global latlong
+        g = geocoder.ipinfo('me')
+        latlong=g.latlng
+
+    def gettemp(self):
+        if latlong==None:
+            self.getlocation()
+
+        #TODO move api key into seperate file
+        openweatherapikey="77d556c4a3afa89eb1b61a0a836a40c6"
+        url=f"https://api.openweathermap.org/data/2.5/weather?lat={latlong[0]}&lon={latlong[1]}&units=metric&appid={openweatherapikey}"
+        resp = requests.get(url=url)
+        data = resp.json()
+        temp=data["main"]["temp"]
+        print("current temp is",temp,"degrees")
+        eel.fridaysaid("it is "+str(temp)+" degrees")
+
+
     def currencyconverter(self):
         global audresp
         currency1 = audresp.currenciesinspeech[0].replace("£", "GBP").replace("$", "USD").replace("dollars",
@@ -558,6 +590,7 @@ class Webfunctions():
                         if all(term in url.lower() for term in origterms):
                             urlparts=url.split("/")
                             name=urlparts[len(urlparts)-1]
+                            name=name.replace("%5d","]").replace("%5b","[").replace("%20"," ")
                             files.append({"name":name,"url":url})
                             print("got",str(len(files)),"files")
 
@@ -569,18 +602,15 @@ class Webfunctions():
         eel.stoplistening()
 
 
-
-        audresp.flags.append("opendirfilechoice")
-        audresp.contextdata.append(files)
-        speechrec.handleinput()
+        if len(files)>0:
+            audresp.flags.append("opendirfilechoice")
+            audresp.contextdata.append(files)
+            speechrec.handleinput()
 
 
 
 
 if __name__ == '__main__':
-
-
-
 
     startgui = GUIstartClass()
     startgui.start()
