@@ -18,7 +18,7 @@ from porcupine import Porcupine
 import pyaudio
 import wave
 import simpleaudio as sa
-import speech_recognition as sr
+import speech_recognition as speech_rec
 from xml.dom import minidom
 import xml.etree.ElementTree as ET
 import requests
@@ -27,6 +27,12 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from seleniumrequests import Chrome
 from selenium.webdriver.chrome.options import Options
+import socket
+from kamene.all import *
+from netaddr import IPNetwork
+
+
+
 
 inconvo=False
 
@@ -220,8 +226,11 @@ class AudioRecognition(Thread):
         if "opendirfilechoice" in audresp.flags:
             if "download" in audresp.speechtext:            ##if download and a number in speech interpret as download instruction
                 print("download ing")
-                audresp=AudioRecognition()
+                audresp=Audioresponse()
                 eel.stoplistening()
+
+                ###TODO follow up file selection, link to J downloader?
+
                 return
             else:
                 eel.fridaysaid("Would you like to select a file?")
@@ -232,6 +241,11 @@ class AudioRecognition(Thread):
 
             return
 
+
+        if "scan for nodes" in audresp.speechtext:
+            nodeman.scanfornodes()
+            eel.stoplistening()
+            return
 
 
 
@@ -283,7 +297,7 @@ class AudioRecognition(Thread):
 
 
         for node in nodeman.nodelist:
-            if any(ext in speech for ext in node.verblist) and node.name in speech:     ###if speech contains a node name and one of its verbs
+            if any(verb in speech for verb in node.verblist) and any(val in speech for val in node.verblist) and node.name in speech:     ###if speech contains a node name and one of its verbs and one of its verbs
                 #audresp.flags.append("nodecommand")
 
 
@@ -300,9 +314,11 @@ class AudioRecognition(Thread):
                 audresp.nodes.append(node)
                 audresp.vals.append(selectedvalue)
                 print("ayy u talking about",node.name,"and u tryna",selectedverb,selectedvalue)
-                response="doing a thing to a node lol"
+
+                eel.stoplistening()
                 nodeman.send(node.name,selectedverb,selectedvalue)
-                break
+                return
+
 
         ####resolution
 
@@ -316,8 +332,8 @@ class AudioRecognition(Thread):
     def startdetection(self):
         global audresp
         inconvo=True
-        r = sr.Recognizer()
-        with sr.Microphone() as source:
+        r = speech_rec.Recognizer()
+        with speech_rec.Microphone() as source:
             print("Listening")
             eel.showlistening()
             audio = r.listen(source)
@@ -333,12 +349,12 @@ class AudioRecognition(Thread):
             audresp.speechtext=speech
             self.handleinput()
 
-        except sr.UnknownValueError:
+        except speech_rec.UnknownValueError:
             print("Google Speech Recognition could not understand audio")
             inconvo=False
             eel.stoplistening()
             eel.yousaid("Couldnt understand audio")
-        except sr.RequestError as e:
+        except speech_rec.RequestError as e:
             print("Could not request results from Google Speech Recognition service; {0}".format(e))
             inconvo=False
 
@@ -366,7 +382,7 @@ class GUIstartClass(Thread):
             }
             start_urls="main.html"
             #eel.start(start_urls='main.html',options=options)
-            #TODO  open chromium in fullscreen on rpi
+
             eel.start("main.html",options=options)
         except (SystemExit, MemoryError, KeyboardInterrupt):
             # We can do something here if needed
@@ -402,14 +418,35 @@ class NodeManager(Thread):
             vals=child.find("Vals").text.split(",")
             self.nodelist.append(Node(name,mac,ip,verbs,vals))
 
-    def findnodes(self):
-        for node in self.nodelist:
-            pass
-            if node.online == None or node.online == False:
-                pass
-                #ping each node to check inkine
+    def scanfornodes(self):
+        for node in nodeman.nodelist:
+            node.online=False
 
-    #TODO method to find nodes on local network via mac address
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(("8.8.8.8", 80))
+        ip=s.getsockname()[0]
+
+        ##TODO programatically get subnet mask
+        subnet="255.255.255.0"
+
+        ipwithmask=str(IPNetwork(ip+"/"+subnet).cidr)
+
+        ans, unans = srp(Ether(dst="ff:ff:ff:ff:ff:ff") / ARP(pdst=ipwithmask), timeout=2)
+
+        #print(ans.summary())
+        macs=[]
+        for device in ans.res:
+            mac=device[1].payload.hwsrc
+            ip=device[1].payload.fields["psrc"]
+            print(mac)
+            macs.append({"mac":mac,"ip":ip})
+            for node in self.nodelist:
+                if mac.lower() == node.mac.lower():
+                    node.online=True
+                    node.ip=ip
+                    print(node.name,"node is online")
+
+
 
 
     def send(self,Fname,verb,value):
@@ -421,8 +458,13 @@ class NodeManager(Thread):
                 else:
                     if node.online:
                         try:
-                            r = requests.get(url="http://" + node.ip + "/" + verb + "/" + value)
+                            url="http://" + node.ip + "/" + verb + "/" + value
+                            print("getting",url)
+                            #eel.fridaysaid("GET http://"+url)
+                            r = requests.get(url=url)
                             print(r)
+                            if r.status_code==200:
+                                eel.fridaysaid("Done")
                         except Exception:
                             print("timeout on", self.ip)
                             eel.fridaysaid("node timed out")
@@ -468,7 +510,8 @@ class Webfunctions():
 
 
     def opendirsearch(self,term):
-
+        eel.stoplistening()
+        #TODO loading animation
         browser.set_page_load_timeout(20)
         originalterm=term
         term=term.strip()
@@ -525,7 +568,7 @@ class Webfunctions():
         eel.fridaysaid("Got "+str(len(files))+" matching links")
         eel.stoplistening()
 
-        ###TODO follow up file selection
+
 
         audresp.flags.append("opendirfilechoice")
         audresp.contextdata.append(files)
@@ -535,6 +578,10 @@ class Webfunctions():
 
 
 if __name__ == '__main__':
+
+
+
+
     startgui = GUIstartClass()
     startgui.start()
     guithread=GUITHREAD()
@@ -543,6 +590,9 @@ if __name__ == '__main__':
     nodeman = NodeManager()
     nodeman.setupgrammar()
     audresp = Audioresponse()
+
+
+    nodeman.scanfornodes()
 
     chrome_options = Options()
     #chrome_options.add_argument("headless")
@@ -579,13 +629,14 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    args.keyword_file_paths="friday_windows.ppn"                ######HERE IS SOME HARDCODING SO THE PY CAN BE RUN FROM THE IDE #TODO remove I guess
+
 
     if args.show_audio_devices_info:
         PorcupineDemo.show_audio_devices_info()
     else:
         if not args.keyword_file_paths:
-            raise ValueError('keyword file paths are missing')
+            args.keyword_file_paths = "friday_windows.ppn"  ######HERE IS SOME HARDCODING SO THE PY CAN BE RUN FROM THE IDE
+            #raise ValueError('keyword file paths are missing')
 
         keyword_file_paths = [x.strip() for x in args.keyword_file_paths.split(',')]
 
@@ -601,3 +652,6 @@ if __name__ == '__main__':
             sensitivities=sensitivities,
             output_path=args.output_path,
             input_device_index=args.input_audio_device_index).run()
+
+
+#TODO make project use virtual env

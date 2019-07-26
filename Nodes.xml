@@ -1,8 +1,8 @@
 <XML>
 <Node>
 	<FName>lights</FName>
-	<Mac>68:C6:3A:AC:55:A7 </Mac>
-	<IP>192.168.1.83</IP>
+	<Mac>68:C6:3A:AC:55:A7</Mac>
+	<IP></IP>
 	<Verbs>switch,turn,open</Verbs>
 	<Vals>on,off</Vals>
 </Node>

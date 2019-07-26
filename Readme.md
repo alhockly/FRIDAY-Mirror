@@ -1,0 +1,2 @@
+
+When you want to distribute or simply open source your python codes, the good choice is to use pip freeze > requirements.txt to get a dependency file. You can add requirements.txt into git version control.
