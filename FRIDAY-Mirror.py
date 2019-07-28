@@ -40,6 +40,8 @@ browser=None
 
 latlong=None
 
+contextresettimers=[]
+
 class PorcupineDemo(Thread):
 
     """
@@ -131,7 +133,8 @@ class PorcupineDemo(Thread):
                     print('[%s] detected keyword' % str(datetime.now()))
                     #playbeep()
 
-                    speechrec.startdetection()
+
+                    speechrec.startdetection()                                  #######WORD DETECTED
 
                 elif num_keywords > 1 and result >= 0:
                     print('[%s] detected %s' % (str(datetime.now()), keyword_names[result]))
@@ -209,6 +212,11 @@ class AudioRecognition(Thread):
     def __init__(self):
         Thread.__init__(self)
 
+    def startcontextereset(self):
+        if len(contextresettimers) == 0:
+            contextresettimers.append(ContextResetTimer())
+            contextresettimers[0].start()
+
     def handleinput(self):                   ###stop face animation b4 returning       ###analyse speech and detect elements relavant to filters, these elemenrs are appended to resp obj as are filters
         global audresp
 
@@ -226,6 +234,7 @@ class AudioRecognition(Thread):
         if "opendirfilechoice" in audresp.flags:
             if "download" in audresp.speechtext:            ##if download and a number in speech interpret as download instruction
                 print("download ing")
+                eel.fridaysaid("ok sending link to jDownloader or something lol")
 
                 ###TODO follow up file selection, link to J downloader?
                 audresp=Audioresponse()
@@ -246,7 +255,6 @@ class AudioRecognition(Thread):
 
             return
 
-        #TODO add timer that clears the context
         if "clear context" in audresp.speechtext:
             audresp=Audioresponse()
             eel.stoplistening()
@@ -261,6 +269,8 @@ class AudioRecognition(Thread):
             Webfunctions().gettemp()
             eel.stoplistening()
             return
+
+        ###currency convertion
 
         currencycount=0
         currenciesinspeech=[]
@@ -291,6 +301,7 @@ class AudioRecognition(Thread):
                 eel.fridaysaid("error finding conversion amount")
                 print("too many or not enough numbers in input")
             eel.stoplistening()
+            audresp=Audioresponse()
             return
 
 
@@ -302,6 +313,7 @@ class AudioRecognition(Thread):
                 term=speech[speech.index("for")+3:]
                 if len(term)>3:
                     Webfunctions().opendirsearch(term)
+                    self.startcontextereset()
 
             #TODO sign up to google search api, use selenium to investigate results
 
@@ -333,12 +345,11 @@ class AudioRecognition(Thread):
                 return
 
 
-        ####resolution
-
+        ####resolution####I think ideally the above would be filters that act on the audioResponse obj the above below
+        ##would choose from the possible options that the characteristics of the input would allow
 
 
         print("audio response handler closing")
-
         eel.stoplistening()
         eel.fridaysaid(response)
 
@@ -403,7 +414,8 @@ class GUIstartClass(Thread):
             pass
         print("GUI closed")
 
-
+#TODO add spotify on display
+## and voice commands ofc :P
 
 class GUITHREAD(Thread):
     global inconvo
@@ -414,6 +426,18 @@ class GUITHREAD(Thread):
         pass
         #eel.sleep(4)
 
+
+class ContextResetTimer(Thread):
+
+    def __init__(self):
+        Thread.__init__(self)
+
+    def run(self):
+        global audresp
+        print("context reset started")
+        time.sleep(30)
+        print("context resetting")
+        audresp=Audioresponse()
 
 class NodeManager(Thread):
 
@@ -569,12 +593,14 @@ class Webfunctions():
 
         print(validlinks)
         eel.fridaysaid("Searching... "+str(len(validlinks))+" sources")
+        eel.makeprogressbar()
         files=[]
         count=1
         for link in validlinks:
             if count==10:
                 break
             print("link",count,"out of ",str(len(validlinks)))
+            eel.setprogressbar(count/len(validlinks))
             try:
                 browser.get(link)
                 filelinks= browser.find_elements_by_tag_name("a")
@@ -587,7 +613,7 @@ class Webfunctions():
                     if any(ext in url[-4:] for ext in filetypes):
 
                         origterms = originalterm.lower().split()
-                        if all(term in url.lower() for term in origterms):
+                        if all(term in url.lower() for term in origterms):   ##if the search terms are in the filename
                             urlparts=url.split("/")
                             name=urlparts[len(urlparts)-1]
                             name=name.replace("%5d","]").replace("%5b","[").replace("%20"," ")
@@ -597,7 +623,7 @@ class Webfunctions():
             except Exception:
                 print("page probably failed to load or timed out")
             count+=1
-
+        print("Got "+str(len(files))+" matching links")
         eel.fridaysaid("Got "+str(len(files))+" matching links")
         eel.stoplistening()
 
@@ -659,7 +685,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-
+    eel.showlineanimation()
 
     if args.show_audio_devices_info:
         PorcupineDemo.show_audio_devices_info()
@@ -684,4 +710,4 @@ if __name__ == '__main__':
             input_device_index=args.input_audio_device_index).run()
 
 
-#TODO make project use virtual env
+#TODO make project use virtual env maybe????

@@ -55,6 +55,10 @@
 				  border-radius:6px;
 				  margin-left: 8px;
 			}
+        #loadingbar{
+            color: white;
+            font-size: 20px;
+        }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -110,7 +114,7 @@
 		      $("#fridaysaid").text(".");
 		      $("#yousaid").removeClass("fadeout")
 		      $("#fridaysaid").removeClass("fadeout")
-		      $("#face").removeClass("hidden")
+		      $("#face").empty()
               var maxElements = 60;
             var duration = 1100;
             var toAnimate = [];
@@ -154,28 +158,43 @@
 
             eel.expose(stoplistening)
             function stoplistening(){
-		        $("#face").addClass("hidden")
+
+                $(".particule").remove()
             }
             eel.expose(dumphtml)
             function dumphtml(html) {
                 $("#pagedump").text(html)
             }
 
+            eel.expose(showlineanimation)
+            function showlineanimation(){
+		      $("#animatedline").removeClass("hidden")
+            }
 
+            eel.expose(makeprogressbar)
+            function makeprogressbar() {
+                $("#face").innerHTML=""
+                var loading= document.createElement("div")
+                loading.id ="loadingbar"
+                $("#face").append(loading)
+            }
+            eel.expose(setprogressbar)
+            function setprogressbar(percent){       /* takes float percentage*/
+                $('#loadingbar').text(percent)
+            }
 
     </script>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body onload="startup()" style="background: black">
-    <img id="animatedline" src="shittyfriday_animated.svg">
-    <div id="face" class="hidden">
+    <img id="animatedline" src="shittyfriday_animated.svg" class="hidden">
+    <div id="face">
 
 
     </div>
 
     <h1 class="headline" id="yousaid"></h1>
-
     <h2 class="headline" id="fridaysaid"></h2>
 
     <div class="floatingleft" id="pagedump"></div>
