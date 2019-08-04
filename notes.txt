@@ -1,0 +1,67 @@
+
+
+CHROME / CHROMEVERSION MISMATCH
+
+
+Chromium 65.0.3325.181 Built on Raspbian , running on Raspbian 9.4
+
+(Driver info: chromedriver=2.35 (0),platform=Linux 4.14.52-v7+ armv7l)
+
+COMPATIBLE WITH CHROME 62
+
+
+
+GECKODRIVER x ICEWEASEL ????
+
+wget https://github.com/mozilla/geckodriver/releases/download/v0.19.1/geckodriver-v0.19.1-arm7hf.tar.gz
+
+NOT GOOD FOR ARM AT ALLLLLL
+
+
+HOTWORD DETECTION>>>>>>>>>>>>>>>>>>>>>
+
+porcupine unable to create custom models 
+
+trying snowboy
+
+instructions below copied from:
+https://www.youtube.com/watch?v=mUEm05ZAhhI
+
+
+
+1."""Install Packages"""
+sudo apt-get install python-pyaudio python3-pyaudio sox libpcre3 libpcre3-dev libatlas-base-dev &&
+pip install pyaudio
+sudo apt-get install libpcre3 libpcre3-dev
+
+
+2."""Compile a supported swig version (3.0.10 or above)"""
+#Create path snowboy and open it in terminal
+wget https://sourceforge.net/projects/swig/files/swig/swig-3.0.10/swig-3.0.10.tar.gz &&
+tar -xvzf swig-3.0.10.tar.gz &&
+cd swig-3.0.10/ &&   
+./configure --prefix=/usr                  \
+        --without-clisp                    \
+        --without-maximum-compile-warnings &&
+sudo make &&
+sudo make install &&
+sudo install -v -m755 -d /usr/share/doc/swig-3.0.10 &&
+sudo cp -v -R Doc/* /usr/share/doc/swig-3.0.10 &&
+cd ..
+
+3."""Compile"""
+git clone https://github.com/Kitt-AI/snowboy &&
+cd snowboy/swig/Python3 && make
+
+#Open /snowboy/snowboy/examples/Python3/snowboydecoder.py
+#Change from "from . import snowboydetect" to "import snowboydetect"
+#Save it
+
+
+4."""How to use""
+#Copy files from "/snowboy/snowboy/swig/Python3" to your project
+#Copy path "resourses" from /snowboy/snowboy to your project path
+#Copy file "snowboydecoder.py" from "/snowboy/snowboy/examples/Python3" to your project path
+#Open "https://snowboy.kitt.ai/" , login & register ,create and download your voice model
+#Copy your voice model to project path
+#Now you can use snowboy module in python file from this path

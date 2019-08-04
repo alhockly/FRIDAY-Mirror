@@ -19,8 +19,8 @@ int pwmpercent;
 WiFiUDP udp;
 
 // Replace with your network credentials
-const char* ssid = "VM9060260";
-const char* password = "gd7hvYtbrtsz";
+const char* ssid = "TP Extender";
+const char* password = "ExtenderLads";
 
 const int dstPort = 5000;
 // Set web server port number to 80
