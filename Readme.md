@@ -2,16 +2,13 @@
 
 I had another project called FRIDAY-JAVA, this is basically that but re-written in python and with a GUI
 
-
+#Steps#
 sudo pip3 install selenium selenium-requests numpy eel forex-python simpleaudio kamene netaddr geocoder pyaudio SpeechRecognition
 
-pyaudio may require you to install portaudio dev 
-1. sudo apt-get update 
-2. sudo apt-get upgrade 
-3. sudo apt-get install portaudio19-dev 
-4. sudo apt-get install tcpdump
-5. sudo apt-get install flac
-sudo apt-get install libatlas-base-dev
+sudo apt-get update &&
+sudo apt-get upgrade &&
+sudo apt-get install portaudio19-dev tcpdump flac libatlas-base-dev python-pyaudio python3-pyaudio sox libpcre3 libpcre3-dev libatlas-base-dev -y
+
 
 
 ChromeDriver is required. For rpi use arm builds 
