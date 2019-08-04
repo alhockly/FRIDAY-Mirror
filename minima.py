@@ -1,5 +1,7 @@
-import snowboydecoder
-
+try:
+	import snowboydecoder
+except Exception:
+	pass
 import pyaudio
 import wave
 import simpleaudio as sa
@@ -39,6 +41,8 @@ class Aud():
 
 		detector.start(Aud().detected_callback)
 
-detector = snowboydecoder.HotwordDetector("Friday.pmdl", sensitivity=0.5, audio_gain=1)
-
-detector.start(Aud().detected_callback)
+try:
+	detector = snowboydecoder.HotwordDetector("Friday.pmdl", sensitivity=0.5, audio_gain=1)
+	detector.start(Aud().detected_callback)
+except Exception:
+	pass

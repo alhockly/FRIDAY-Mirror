@@ -12,8 +12,7 @@ import numpy as np
 import soundfile
 from forex_python.bitcoin import BtcConverter
 
-sys.path.append(os.path.join(os.path.dirname(__file__), 'binding/python'))
-from porcupine import Porcupine
+
 import pyaudio
 import wave
 import simpleaudio as sa
@@ -30,8 +29,10 @@ import socket
 from kamene.all import *
 from netaddr import IPNetwork
 import geocoder
-import snowboydecoder
-
+try:
+    import snowboydecoder
+except:
+    print("voice is not supported on windows")
 inconvo=False
 
 browser=None
@@ -213,7 +214,10 @@ class AudioRecognition(Thread):
 
     def startdetection(self):
         global audresp,detector
-        detector.terminate()
+        try:
+            detector.terminate()
+        except Exception:
+            pass
         inconvo=True
         r = speech_rec.Recognizer()
         with speech_rec.Microphone() as source:
@@ -240,9 +244,10 @@ class AudioRecognition(Thread):
         except speech_rec.RequestError as e:
             print("Could not request results from Google Speech Recognition service; {0}".format(e))
             inconvo=False
-
-        detector.start(AudioRecognition().startdetection)
-
+        try:
+            detector.start(AudioRecognition().startdetection)
+        except Exception:
+            pass
     def run(self):
         pass
 
@@ -517,9 +522,14 @@ if __name__ == '__main__':
     # chrome_options.add_argument("--disable-javascript")
     # browser = Chrome(chrome_options=chrome_options)
 
-    detector = snowboydecoder.HotwordDetector("Friday.pmdl", sensitivity=0.5, audio_gain=8)
+    try:
+        detector = snowboydecoder.HotwordDetector("Friday.pmdl", sensitivity=0.5, audio_gain=8)
+        detector.start(AudioRecognition().startdetection)
+    except:
+        pass
 
-    detector.start(AudioRecognition().startdetection)
+    eel.showlineanimation()
 
 
-#TODO make project use virtual env maybe????
+
+#TODO hardware button to trigger voice recognition
