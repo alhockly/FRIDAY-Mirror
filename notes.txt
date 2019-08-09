@@ -20,14 +20,12 @@ NOT GOOD FOR ARM AT ALLLLLL
 
 HOTWORD DETECTION>>>>>>>>>>>>>>>>>>>>>
 
-porcupine unable to create custom models 
+It appears it is no longer possible to create custom hotword .ppn file for porcupine
 
-trying snowboy
+I decided to use snowboy for rpi
 
 instructions below copied from:
 https://www.youtube.com/watch?v=mUEm05ZAhhI
-
-
 
 1."""Install Packages"""
 sudo apt-get install python-pyaudio python3-pyaudio sox libpcre3 libpcre3-dev libatlas-base-dev &&

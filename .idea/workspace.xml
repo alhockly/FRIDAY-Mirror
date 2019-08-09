@@ -1,236 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/web/main.html" line="110" />
     <bookmark url="file://$PROJECT_DIR$/FRIDAY-Mirror.py" line="235" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f381709-42d5-4379-a8b0-0e57bfe28d5d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/friday_windows.ppn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FRIDAY-Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/FRIDAY-Mirror.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/chrome" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/chrome-wrapper" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/chrome.1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/chrome.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/chrome_sandbox" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/libffmpegsumo.so" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/am.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/ar.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/bg.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/bn.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/ca.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/cs.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/da.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/de.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/el.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/en-GB.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/en-US.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/es-419.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/es.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/et.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/fa.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/fi.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/fil.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/fr.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/gu.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/he.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/hi.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/hr.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/hu.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/id.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/it.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/ja.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/kn.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/ko.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/lt.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/lv.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/ml.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/mr.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/nb.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/nl.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/pl.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/pt-BR.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/pt-PT.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/ro.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/ru.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/sk.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/sl.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/sr.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/sv.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/sw.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/ta.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/te.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/th.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/tr.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/uk.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/vi.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/zh-CN.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/locales/zh-TW.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/product_logo_48.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources.pak" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/DevTools.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/HeapSnapshotWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/applicationCache.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/breakpointBorder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/breakpointConditionalBorder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/breakpointConditionalCounterBorder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/breakpointCounterBorder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/checker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/closeButtons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/cookie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/database.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/databaseTable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/debuggerContinue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/debuggerPause.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/debuggerStepInto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/debuggerStepOut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/debuggerStepOver.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/deleteIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/disclosureTriangleSmallDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/disclosureTriangleSmallDownBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/disclosureTriangleSmallDownWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/disclosureTriangleSmallRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/disclosureTriangleSmallRightBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/disclosureTriangleSmallRightDown.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/disclosureTriangleSmallRightDownBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/disclosureTriangleSmallRightDownWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/disclosureTriangleSmallRightWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/errorIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/errorMediumIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/errorRedDot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/forward.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/frame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/glossyHeader.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/glossyHeaderPressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/glossyHeaderSelected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/glossyHeaderSelectedPressed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/goArrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/graphLabelCalloutLeft.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/graphLabelCalloutRight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/localStorage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/paneAddButtons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/paneBottomGrow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/paneBottomGrowActive.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/paneElementStateButtons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/paneFilterButtons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/paneGrowHandleLine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/paneRefreshButtons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/paneSettingsButtons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/popoverArrows.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/popoverBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/profileGroupIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/profileIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/profileSmallIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/profilesSilhouette.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/programCounterBorder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/radioDot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/resourceCSSIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/resourceDocumentIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/resourceDocumentIconSmall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/resourceJSIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/resourcePlainIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/resourcePlainIconSmall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/resourcesSizeGraphIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/resourcesTimeGraphIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/scriptsSilhouette.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/searchSmallBlue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/searchSmallBrightBlue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/searchSmallGray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/searchSmallWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segment.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentEnd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentHover.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentHoverChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentHoverEnd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentHoverEndChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentSelected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentSelectedChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentSelectedEnd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/segmentSelectedEndChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/sessionStorage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/spinner.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/spinnerActive.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/spinnerActiveSelected.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/spinnerInactive.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/spinnerInactiveSelected.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/splitviewDimple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/splitviewDividerBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarBackgroundChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarBottomBackground.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarBottomBackgroundChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarButtonGlyphs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarButtons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarButtonsChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarMenuButton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarMenuButtonChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarMenuButtonSelected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarMenuButtonSelectedChromium.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarResizerHorizontal.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/statusbarResizerVertical.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/successGreenDot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/thumbActiveHoriz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/thumbActiveVert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/thumbHoriz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/thumbHoverHoriz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/thumbHoverVert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/thumbVert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineBarBlue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineBarGray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineBarGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineBarOrange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineBarPurple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineBarRed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineBarYellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineCheckmarks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineDots.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineHollowPillBlue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineHollowPillGray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineHollowPillGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineHollowPillOrange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineHollowPillPurple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineHollowPillRed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelineHollowPillYellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelinePillBlue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelinePillGray.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelinePillGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelinePillOrange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelinePillPurple.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelinePillRed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/timelinePillYellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/toolbarIcons.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/toolbarIconsSmall.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/toolbarItemSelected.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/trackHoriz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/trackVert.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/treeDownTriangleBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/treeDownTriangleWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/treeRightTriangleBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/treeRightTriangleWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/treeUpTriangleBlack.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/treeUpTriangleWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/userInputIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/userInputPreviousIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/userInputResultIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/warningIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/warningMediumIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/warningOrangeDot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/Images/warningsErrors.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/ScriptFormatterWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/dataGrid.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/devTools.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/devtools.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/inspectorCommon.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/resources/inspector/networkLogView.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/xdg-mime" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chrome-linux/xdg-settings" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/lib/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/wasm/pv_porcupine.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/wasm/pv_porcupine.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -249,39 +28,42 @@
     <session id="2099914536">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="527" />
-          <entry key="py" value="2964" />
+          <entry key="html" value="553" />
+          <entry key="py" value="2997" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="527" />
-          <entry key="Python" value="2964" />
+          <entry key="HTML" value="553" />
+          <entry key="Python" value="2997" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cc" value="1" />
-          <entry key="py" value="24" />
+          <entry key="html" value="1" />
+          <entry key="py" value="25" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="1" />
-          <entry key="Python" value="24" />
+          <entry key="HTML" value="1" />
+          <entry key="Python" value="25" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -289,14 +71,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="323" lean-forward="true" selection-start-line="323" selection-end-line="323" />
+            <state relative-caret-position="485">
+              <caret line="725" column="21" selection-start-line="725" selection-start-column="21" selection-end-line="725" selection-end-column="21" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-                <marker date="1564948121267" expanded="true" signature="22319:24345" ph="..." />
+                <marker date="1565344091351" expanded="true" signature="22319:24345" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="434">
+              <caret line="192" column="61" selection-start-line="192" selection-start-column="61" selection-end-line="192" selection-end-column="61" />
+              <folding>
+                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -305,7 +99,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/snowboy-detect-swig.cc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
+            <state relative-caret-position="53720">
               <caret line="3160" column="11" selection-start-line="3160" selection-start-column="11" selection-end-line="3160" selection-end-column="11" />
             </state>
           </provider>
@@ -314,8 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/Downloads/FRIDAY-Mirror.old.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="913">
-              <caret line="708" column="41" lean-forward="true" selection-start-line="661" selection-start-column="4" selection-end-line="709" selection-end-column="67" />
+            <state relative-caret-position="11815">
+              <caret line="708" column="41" selection-start-line="661" selection-start-column="4" selection-end-line="709" selection-end-column="67" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
               </folding>
@@ -326,23 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/minima.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
+            <state relative-caret-position="748">
               <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
-              <folding>
-                <element signature="e#29#43#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/snowboydecoder.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-              <folding>
-                <element signature="e#23#41#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -350,50 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Python36-32/Lib/site-packages/speech_recognition/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
+            <state relative-caret-position="9537">
               <caret line="578" column="14" selection-start-line="578" selection-start-column="8" selection-end-line="578" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/Nodes.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/minima.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/firefoxselenium.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#0#30#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nodes.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -464,15 +201,15 @@
         <option value="$PROJECT_DIR$/web/GUI.js" />
         <option value="C:/Python35-3/Lib/site-packages/forex_python/converter.py" />
         <option value="$PROJECT_DIR$/Nodes.xml" />
-        <option value="$PROJECT_DIR$/web/main.html" />
         <option value="$PROJECT_DIR$/spotifylib.py" />
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/firefoxselenium.py" />
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/snowboy/examples/Python3/minima.py" />
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/minima.py" />
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/Nodes.xml" />
-        <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/FRIDAY-Mirror.py" />
         <option value="$PROJECT_DIR$/minima.py" />
+        <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/FRIDAY-Mirror.py" />
         <option value="$PROJECT_DIR$/FRIDAY-Mirror.py" />
+        <option value="$PROJECT_DIR$/web/main.html" />
       </list>
     </option>
   </component>
@@ -483,10 +220,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="232" />
-    <option name="y" value="-60" />
-    <option name="width" value="1950" />
-    <option name="height" value="2075" />
+    <option name="x" value="207" />
+    <option name="y" value="-54" />
+    <option name="width" value="1755" />
+    <option name="height" value="1870" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -501,6 +238,11 @@
             <path>
               <item name="FRIDAY-Mirror" type="b2602c69:ProjectViewProjectNode" />
               <item name="FRIDAY-Mirror" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FRIDAY-Mirror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRIDAY-Mirror" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FRIDAY-Mirror" type="b2602c69:ProjectViewProjectNode" />
@@ -703,32 +445,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
+    <frame x="-6" y="-6" width="1719" height="932" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" order="0" visible="true" weight="0.2850436" />
+      <window_info active="true" id="Project" order="0" visible="true" weight="0.25856885" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="File Transfer" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.46175638" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.30028328" />
-      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.34702548" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.34702548" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3292978" />
       <window_info anchor="bottom" id="Python Console" order="9" weight="0.3292978" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3292978" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="right" id="Remote Host" weight="0.3293092" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24980016" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32997987" />
       <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Remote Host" order="5" weight="0.3293092" />
     </layout>
     <layout-to-restore>
       <window_info id="Project" order="0" visible="true" weight="0.25259793" />
@@ -826,13 +568,7 @@
     <entry file="file://C:/Python35-3/Lib/site-packages/selenium/webdriver/chrome/webdriver.py" />
     <entry file="file://C:/Python35-3/Lib/site-packages/pyaudio.py" />
     <entry file="file://E:/Documents/GitHub/NightmareCatcher/web/main.html" />
-    <entry file="file://$PROJECT_DIR$/venv/Scripts/scapy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Scripts/scapy" />
     <entry file="file://$PROJECT_DIR$/binding/python/porcupine.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2312">
@@ -879,9 +615,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="16" column="16" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -899,16 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1003">
-          <caret line="59" column="27" selection-start-line="59" selection-start-column="27" selection-end-line="59" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Spotify-OLED/Spotify-OLED.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -923,47 +646,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python36-32/Lib/site-packages/speech_recognition/__init__.py">
+    <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="578" column="14" selection-start-line="578" selection-start-column="8" selection-end-line="578" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/minima.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        <state relative-caret-position="485">
+          <caret line="725" column="21" selection-start-line="725" selection-start-column="21" selection-end-line="725" selection-end-column="21" />
           <folding>
-            <element signature="e#29#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/FRIDAY-Mirror.old.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="913">
-          <caret line="708" column="41" lean-forward="true" selection-start-line="661" selection-start-column="4" selection-end-line="709" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
+            <element signature="e#24#34#0" expanded="true" />
+            <marker date="1565344091351" expanded="true" signature="22319:24345" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/snowboy-detect-swig.cc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="53720">
           <caret line="3160" column="11" selection-start-line="3160" selection-start-column="11" selection-end-line="3160" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
+    <entry file="file://$USER_HOME$/Downloads/FRIDAY-Mirror.old.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="323" lean-forward="true" selection-start-line="323" selection-end-line="323" />
+        <state relative-caret-position="11815">
+          <caret line="708" column="41" selection-start-line="661" selection-start-column="4" selection-end-line="709" selection-end-column="67" />
           <folding>
-            <element signature="e#24#34#0" expanded="true" />
-            <marker date="1564948121267" expanded="true" signature="22319:24345" ph="..." />
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/minima.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="47" column="8" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36-32/Lib/site-packages/speech_recognition/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9537">
+          <caret line="578" column="14" selection-start-line="578" selection-start-column="8" selection-end-line="578" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="192" column="61" selection-start-line="192" selection-start-column="61" selection-end-line="192" selection-end-column="61" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

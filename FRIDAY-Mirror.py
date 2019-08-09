@@ -719,12 +719,11 @@ if __name__ == '__main__':
     # chrome_options.add_argument("--disable-javascript")
     # browser = Chrome(chrome_options=chrome_options)
 
+    eel.showlineanimation()
     try:
-        detector = snowboydecoder.HotwordDetector("Friday.pmdl", sensitivity=0.5, audio_gain=8)
+        detector = snowboydecoder.HotwordDetector("Friday.pmdl", sensitivity=0.48, audio_gain=8)
         detector.start(AudioRecognition().startdetection)
-        eel.showlineanimation()
     except Exception:
-        eel.showlineanimation()
         startporcupine()
 
 
