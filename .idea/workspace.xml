@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f381709-42d5-4379-a8b0-0e57bfe28d5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FRIDAY-Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/FRIDAY-Mirror.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,15 +36,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="553" />
-          <entry key="py" value="2997" />
+          <entry key="html" value="576" />
+          <entry key="py" value="3066" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="553" />
-          <entry key="Python" value="2997" />
+          <entry key="HTML" value="576" />
+          <entry key="Python" value="3066" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
@@ -71,24 +68,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="725" column="21" selection-start-line="725" selection-start-column="21" selection-end-line="725" selection-end-column="21" />
+            <state relative-caret-position="387">
+              <caret line="551" column="17" selection-start-line="551" selection-start-column="17" selection-end-line="551" selection-end-column="17" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-                <marker date="1565344091351" expanded="true" signature="22319:24345" ph="..." />
+                <element signature="e#22324#24341#0" />
+                <marker date="1565346931849" expanded="true" signature="22348:24374" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="192" column="61" selection-start-line="192" selection-start-column="61" selection-end-line="192" selection-end-column="61" />
+            <state relative-caret-position="-255">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -208,8 +206,8 @@
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/Nodes.xml" />
         <option value="$PROJECT_DIR$/minima.py" />
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/FRIDAY-Mirror.py" />
-        <option value="$PROJECT_DIR$/FRIDAY-Mirror.py" />
         <option value="$PROJECT_DIR$/web/main.html" />
+        <option value="$PROJECT_DIR$/FRIDAY-Mirror.py" />
       </list>
     </option>
   </component>
@@ -254,6 +252,12 @@
               <item name="FRIDAY-Mirror" type="462c0819:PsiDirectoryNode" />
               <item name="FRIDAY-Mirror.py" type="8704e2dd:PyFileNode" />
               <item name="AudioRecognition" type="dd8bbb05:PyElementNode" />
+            </path>
+            <path>
+              <item name="FRIDAY-Mirror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRIDAY-Mirror" type="462c0819:PsiDirectoryNode" />
+              <item name="FRIDAY-Mirror.py" type="8704e2dd:PyFileNode" />
+              <item name="Webfunctions" type="dd8bbb05:PyElementNode" />
             </path>
           </expand>
           <select />
@@ -646,17 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="725" column="21" selection-start-line="725" selection-start-column="21" selection-end-line="725" selection-end-column="21" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-            <marker date="1565344091351" expanded="true" signature="22319:24345" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/snowboy-detect-swig.cc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="53720">
@@ -690,10 +683,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="192" column="61" selection-start-line="192" selection-start-column="61" selection-end-line="192" selection-end-column="61" />
+        <state relative-caret-position="-255">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="551" column="17" selection-start-line="551" selection-start-column="17" selection-end-line="551" selection-end-column="17" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#22324#24341#0" />
+            <marker date="1565346931849" expanded="true" signature="22348:24374" ph="..." />
           </folding>
         </state>
       </provider>

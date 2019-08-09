@@ -548,7 +548,8 @@ class Webfunctions():
         #TODO move api key into seperate file
         openweatherapikey="77d556c4a3afa89eb1b61a0a836a40c6"
         #url=f"https://api.openweathermap.org/data/2.5/weather?lat={latlong[0]}&lon={latlong[1]}&units=metric&appid={openweatherapikey}"
-        url="https://api.openweathermap.org/data/2.5/weather?lat="+latlong[0]+"&lon="+latlong[1]+"&units=metric&appid="+openweatherapikey
+        url="https://api.openweathermap.org/data/2.5/weather?lat="+str(latlong[0])+"&lon="+str(latlong[1])+"&units=metric&appid="+openweatherapikey
+        print(url)
         resp = requests.get(url=url)
         data = resp.json()
         temp=data["main"]["temp"]
@@ -720,10 +721,10 @@ if __name__ == '__main__':
     # browser = Chrome(chrome_options=chrome_options)
 
     eel.showlineanimation()
-    try:
+    try:                            ###for linux/rpi
         detector = snowboydecoder.HotwordDetector("Friday.pmdl", sensitivity=0.48, audio_gain=8)
         detector.start(AudioRecognition().startdetection)
-    except Exception:
+    except Exception:               ###for windows
         startporcupine()
 
 
