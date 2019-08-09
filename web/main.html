@@ -27,10 +27,14 @@
         }
         #face{
             height: 500px;
+            width:500px;
             margin-top: -10px;
-                 -webkit-transition: all 1000ms linear;
-
-                 transition: all 1000ms linear;
+            -webkit-transition: all 1000ms linear;
+            transition: all 1000ms linear;
+            z-index: 10;
+            position: fixed;
+            left:calc(50% - 250px);
+            top:200px;
         }
         .hidden{
             opacity: 0;
@@ -47,18 +51,19 @@
         }
         #animatedline{
             padding-left: 30%;
-            height: 200px;
+            height: 160px;
+            padding-top: 3px;
         }
         .floatingleft{
 				left:0px;
-				  padding: 10px;
-				  top:5%;
+                padding: 10px;
+                top:5%;
 				width: 33%;
 				max-width:40%;
 				z-index: 10;
 				position: fixed;
-				  border-radius:6px;
-				  margin-left: 8px;
+                border-radius:6px;
+                margin-left: 8px;
 			}
         #loadingbar{
             color: white;
@@ -199,6 +204,7 @@
 
     </div>
 
+    <div style="padding-top: 800px"></div>
     <h1 class="headline" id="yousaid"></h1>
     <h2 class="headline" id="fridaysaid"></h2>
 

@@ -27,6 +27,10 @@ I had another project called FRIDAY-JAVA, this is basically that but re-written 
 	cd snowboy/swig/Python3 && make
 
 
+##Start Mirror##
+1. ssh in and `export DISPLAY=:0.0`
+2. start FRIDAY-Mirror.py
+3. open browser to http://localhost:8000/web/main.html
 
 
 

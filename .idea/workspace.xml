@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/FRIDAY-Mirror.py" line="235" mnemonic="4" />
+    <bookmark url="file://$PROJECT_DIR$/FRIDAY-Mirror.py" line="249" mnemonic="4" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f381709-42d5-4379-a8b0-0e57bfe28d5d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/FRIDAY-Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/FRIDAY-Mirror.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,9 +16,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/FRIDAY_Mirror$functioninterrupts.coverage" NAME="functioninterrupts Coverage Results" MODIFIED="1565352914447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FRIDAY_Mirror$googlespeechexample.coverage" NAME="googlespeechexample Coverage Results" MODIFIED="1564010240523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FRIDAY_Mirror$minima.coverage" NAME="minima Coverage Results" MODIFIED="1564942740135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FRIDAY_Mirror$FRIDAY_Mirror.coverage" NAME="FRIDAY-Mirror Coverage Results" MODIFIED="1564948003468" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FRIDAY_Mirror$FRIDAY_Mirror.coverage" NAME="FRIDAY-Mirror Coverage Results" MODIFIED="1565353024585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FRIDAY_Mirror$spotifylib.coverage" NAME="spotifylib Coverage Results" MODIFIED="1564442696933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FRIDAY_Mirror$porcupine_hotword.coverage" NAME="porcupine_hotword Coverage Results" MODIFIED="1563701233510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -36,31 +38,31 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="576" />
-          <entry key="py" value="3066" />
+          <entry key="html" value="725" />
+          <entry key="py" value="3233" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="576" />
-          <entry key="Python" value="3066" />
+          <entry key="HTML" value="725" />
+          <entry key="Python" value="3233" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cc" value="1" />
-          <entry key="html" value="1" />
-          <entry key="py" value="25" />
+          <entry key="html" value="2" />
+          <entry key="py" value="26" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="1" />
-          <entry key="HTML" value="1" />
-          <entry key="Python" value="25" />
+          <entry key="HTML" value="2" />
+          <entry key="Python" value="26" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -71,12 +73,24 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="551" column="17" selection-start-line="551" selection-start-column="17" selection-end-line="551" selection-end-column="17" />
+            <state relative-caret-position="299">
+              <caret line="395" column="44" lean-forward="true" selection-start-line="395" selection-start-column="44" selection-end-line="395" selection-end-column="44" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
                 <element signature="e#22324#24341#0" />
-                <marker date="1565346931849" expanded="true" signature="22348:24374" ph="..." />
+                <marker date="1565353302247" expanded="true" signature="22931:24957" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functioninterrupts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret selection-end-column="22" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,21 +99,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-255">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+            <state relative-caret-position="408">
+              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/snowboy-detect-swig.cc">
+        <entry file="file://C:/xampp/htdocs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53720">
-              <caret line="3160" column="11" selection-start-line="3160" selection-start-column="11" selection-end-line="3160" selection-end-column="11" />
-            </state>
+            <state relative-caret-position="-1479" />
           </provider>
         </entry>
       </file>
@@ -127,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://C:/Python36-32/Lib/site-packages/speech_recognition/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9537">
-              <caret line="578" column="14" selection-start-line="578" selection-start-column="8" selection-end-line="578" selection-end-column="14" />
+            <state relative-caret-position="192">
+              <caret line="586" column="48" selection-start-line="586" selection-start-column="48" selection-end-line="586" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -207,6 +220,7 @@
         <option value="$PROJECT_DIR$/minima.py" />
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/FRIDAY-Mirror.py" />
         <option value="$PROJECT_DIR$/web/main.html" />
+        <option value="$PROJECT_DIR$/functioninterrupts.py" />
         <option value="$PROJECT_DIR$/FRIDAY-Mirror.py" />
       </list>
     </option>
@@ -252,6 +266,12 @@
               <item name="FRIDAY-Mirror" type="462c0819:PsiDirectoryNode" />
               <item name="FRIDAY-Mirror.py" type="8704e2dd:PyFileNode" />
               <item name="AudioRecognition" type="dd8bbb05:PyElementNode" />
+            </path>
+            <path>
+              <item name="FRIDAY-Mirror" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FRIDAY-Mirror" type="462c0819:PsiDirectoryNode" />
+              <item name="FRIDAY-Mirror.py" type="8704e2dd:PyFileNode" />
+              <item name="Audioresponse" type="dd8bbb05:PyElementNode" />
             </path>
             <path>
               <item name="FRIDAY-Mirror" type="b2602c69:ProjectViewProjectNode" />
@@ -321,6 +341,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="functioninterrupts" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FRIDAY-Mirror" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/functioninterrupts.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="googlespeechexample" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FRIDAY-Mirror" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -365,28 +407,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="porcupine_hotword" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="FRIDAY-Mirror" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="G:\PYTHON\FRIDAY-Mirror\FRIDAY-Mirror.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="spotifylib" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FRIDAY-Mirror" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -410,19 +430,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.porcupine_hotword" />
       <item itemvalue="Python.FRIDAY-Mirror" />
       <item itemvalue="Python.googlespeechexample" />
       <item itemvalue="Python.spotifylib" />
       <item itemvalue="Python.minima" />
+      <item itemvalue="Python.functioninterrupts" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.FRIDAY-Mirror" />
+        <item itemvalue="Python.functioninterrupts" />
         <item itemvalue="Python.minima" />
         <item itemvalue="Python.spotifylib" />
         <item itemvalue="Python.googlespeechexample" />
-        <item itemvalue="Python.porcupine_hotword" />
       </list>
     </recent_temporary>
   </component>
@@ -452,12 +472,12 @@
     <frame x="-6" y="-6" width="1719" height="932" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" id="Project" order="0" visible="true" weight="0.25856885" />
+      <window_info id="Project" order="0" visible="true" weight="0.25856885" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46175638" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32793018" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46134663" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.30028328" />
@@ -674,31 +694,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Python36-32/Lib/site-packages/speech_recognition/__init__.py">
+    <entry file="file://$PROJECT_DIR$/web/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9537">
-          <caret line="578" column="14" selection-start-line="578" selection-start-column="8" selection-end-line="578" selection-end-column="14" />
+        <state relative-caret-position="408">
+          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.html">
+    <entry file="file://C:/xampp/htdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="-1479" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functioninterrupts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret selection-end-column="22" />
           <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#0#22#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36-32/Lib/site-packages/speech_recognition/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="586" column="48" selection-start-line="586" selection-start-column="48" selection-end-line="586" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="551" column="17" selection-start-line="551" selection-start-column="17" selection-end-line="551" selection-end-column="17" />
+        <state relative-caret-position="299">
+          <caret line="395" column="44" lean-forward="true" selection-start-line="395" selection-start-column="44" selection-end-line="395" selection-end-column="44" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
             <element signature="e#22324#24341#0" />
-            <marker date="1565346931849" expanded="true" signature="22348:24374" ph="..." />
+            <marker date="1565353302247" expanded="true" signature="22931:24957" ph="..." />
           </folding>
         </state>
       </provider>

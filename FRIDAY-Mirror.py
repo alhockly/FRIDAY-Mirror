@@ -11,7 +11,7 @@ from threading import Thread
 import numpy as np
 import soundfile
 from forex_python.bitcoin import BtcConverter
-
+import multiprocessing
 
 import pyaudio
 import wave
@@ -134,12 +134,26 @@ class PorcupineDemo(Thread):
                     self._recorded_frames.append(pcm)
 
                 result = porcupine.process(pcm)
-                if num_keywords == 1 and result:
+                if num_keywords == 1 and result:                                 #######WORD DETECTED
                     print('[%s] detected keyword' % str(datetime.now()))
                     #playbeep()
 
 
-                    speechrec.startdetection()                                  #######WORD DETECTED
+                    #speechrec.startdetection()
+
+                    p = multiprocessing.Process(target=speechrec.startdetection())
+                    p.start()
+
+                    # Wait for 10 seconds or until process finishes
+                    p.join(2)
+
+                    # If thread is still active
+                    if p.is_alive() and audresp.speechtext=="":
+                        print("running... let's kill it...")
+
+                        # Terminate
+                        p.terminate()
+                        p.join()
 
                 elif num_keywords > 1 and result >= 0:
                     print('[%s] detected %s' % (str(datetime.now()), keyword_names[result]))
@@ -361,8 +375,9 @@ class AudioRecognition(Thread):
 
     def startdetection(self):
         global audresp,detector
+        audresp.speechtext=""
         try:
-            detector.terminate()
+            detector.terminate() ###for snowboy
         except Exception:
             pass
         inconvo=True
@@ -370,7 +385,7 @@ class AudioRecognition(Thread):
         with speech_rec.Microphone() as source:
             print("Listening")
             eel.showlistening()
-            audio = r.listen(source,timeout=5,phrase_time_limit=5)
+            audio = r.listen(source,timeout=5,phrase_time_limit=10) ##sometimes this runs forever
 
 
         # recognize speech using Google Speech Recognition
@@ -392,11 +407,10 @@ class AudioRecognition(Thread):
             print("Could not request results from Google Speech Recognition service; {0}".format(e))
             inconvo=False
         try:
-            detector.start(AudioRecognition().startdetection)
+            detector.start(AudioRecognition().startdetection)       ###for snowboy
         except Exception:
             pass
-    def run(self):
-        pass
+
 
 
 class GUIstartClass(Thread):
@@ -723,7 +737,7 @@ if __name__ == '__main__':
     eel.showlineanimation()
     try:                            ###for linux/rpi
         detector = snowboydecoder.HotwordDetector("Friday.pmdl", sensitivity=0.48, audio_gain=8)
-        detector.start(AudioRecognition().startdetection)
+        detector.start(AudioRecognition().startdetection)       ##WORD DETECTED
     except Exception:               ###for windows
         startporcupine()
 
