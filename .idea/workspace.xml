@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f381709-42d5-4379-a8b0-0e57bfe28d5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/FRIDAY-Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/FRIDAY-Mirror.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,14 +36,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="725" />
+          <entry key="html" value="728" />
           <entry key="py" value="3233" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="725" />
+          <entry key="HTML" value="728" />
           <entry key="Python" value="3233" />
           <entry key="XML" value="13" />
         </counts>
@@ -70,7 +68,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="299">
@@ -96,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+            <state relative-caret-position="120">
+              <caret line="197" column="24" lean-forward="true" selection-start-line="197" selection-start-column="24" selection-end-line="197" selection-end-column="24" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -219,9 +217,9 @@
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/Nodes.xml" />
         <option value="$PROJECT_DIR$/minima.py" />
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/FRIDAY-Mirror.py" />
-        <option value="$PROJECT_DIR$/web/main.html" />
         <option value="$PROJECT_DIR$/functioninterrupts.py" />
         <option value="$PROJECT_DIR$/FRIDAY-Mirror.py" />
+        <option value="$PROJECT_DIR$/web/main.html" />
       </list>
     </option>
   </component>
@@ -694,17 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="50" column="9" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/xampp/htdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1479" />
@@ -735,6 +722,17 @@
             <element signature="e#24#34#0" expanded="true" />
             <element signature="e#22324#24341#0" />
             <marker date="1565353302247" expanded="true" signature="22931:24957" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="197" column="24" lean-forward="true" selection-start-line="197" selection-start-column="24" selection-end-line="197" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
