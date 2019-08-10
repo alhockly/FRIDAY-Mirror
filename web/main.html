@@ -36,7 +36,7 @@
             z-index: 10;
             position: fixed;
             left:calc(50% - 250px);
-            top:200px;
+            top:180px;
         }
         .hidden{
             opacity: 0;
@@ -81,6 +81,13 @@
         #loadingbar{
             color: white;
             font-size: 20px;
+        }
+        #weather{
+            color: white;
+            left:10%;
+            top:30%;
+            height: 80%;
+            width:20%;
         }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
@@ -227,9 +234,15 @@
     </div>
 
 
-    <div class="floatingleft" id="pagedump"></div>
+
+
+    <div class="fixeddiv" id="weather">
+        <div id="weathertoday"></div>
+        <div id="descriptiontoday"></div>
+        <div id="weatherweek"></div>
+    </div>
 
     <script src="js/clock.js"> </script>
-    <script src="js/getweatherAccu.js"> </script>
+    	<script src="js/GetWeather.js"> </script>
 </body>
 </html>

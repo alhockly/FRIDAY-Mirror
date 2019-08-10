@@ -13,7 +13,7 @@ window.onload = function(){
 		//meridian();
 		//whatDay();
 		//getdate();
-	}, 1000);
+	}, 60000);
 };
 
 //Show todays date, a single number
@@ -41,7 +41,7 @@ function time(){
 	seconds = addZero(seconds);
 
 	//changes the html to match results
-	$("#clock").text(hours+":"+minutes+":"+seconds)
+	$("#clock").text(hours+":"+minutes)
 	//document.getElementsByClassName('hours')[0].innerHTML = hours;
 	//document.getElementsByClassName('minutes')[0].innerHTML = minutes;
 	//document.getElementsByClassName('seconds')[0].innerHTML = seconds;

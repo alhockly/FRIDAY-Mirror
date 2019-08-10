@@ -12,6 +12,7 @@ import numpy as np
 import soundfile
 from forex_python.bitcoin import BtcConverter
 import multiprocessing
+import json
 
 import pyaudio
 import wave
@@ -554,6 +555,13 @@ class Webfunctions():
         global latlong
         g = geocoder.ipinfo('me')
         latlong=g.latlng
+        data={}
+        data["lat"]=latlong[0]
+        data["long"]=latlong[1]
+        data["city"]=g.current_result.city
+        with open('web/location.json', 'w') as outfile:
+            json.dump(data, outfile)
+
 
     def gettemp(self):
         if latlong==None:
@@ -722,8 +730,11 @@ if __name__ == '__main__':
     nodeman.setupgrammar()
     audresp = Audioresponse()
 
+    Webfunctions().getlocation()
+
 
     nodeman.scanfornodes()
+
 
     # chrome_options = Options()
     # #chrome_options.add_argument("headless")
