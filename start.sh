@@ -3,6 +3,6 @@ killall chromium-browser
 sudo killall python3
 
 rm -rf ~/.cache/chromium
-sudo python3 FRIDAY-Mirror.py & disown
+sudo nohup python3 FRIDAY-Mirror.py &
 sleep 10
-chromium-browser http://localhost:8000/main.html --kiosk & disown
+chromium-browser http://localhost:8000/main.html --kiosk &
