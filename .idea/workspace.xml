@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f381709-42d5-4379-a8b0-0e57bfe28d5d" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,16 +37,16 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="851" />
-          <entry key="js" value="56" />
+          <entry key="html" value="876" />
+          <entry key="js" value="65" />
           <entry key="py" value="3233" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="851" />
-          <entry key="JavaScript" value="56" />
+          <entry key="HTML" value="876" />
+          <entry key="JavaScript" value="65" />
           <entry key="Python" value="3233" />
           <entry key="XML" value="13" />
         </counts>
@@ -53,8 +54,8 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cc" value="1" />
-          <entry key="html" value="2" />
-          <entry key="js" value="2" />
+          <entry key="html" value="3" />
+          <entry key="js" value="4" />
           <entry key="py" value="26" />
           <entry key="xml" value="1" />
         </counts>
@@ -62,8 +63,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C++" value="1" />
-          <entry key="HTML" value="2" />
-          <entry key="JavaScript" value="2" />
+          <entry key="HTML" value="3" />
+          <entry key="JavaScript" value="4" />
           <entry key="Python" value="26" />
           <entry key="XML" value="1" />
         </counts>
@@ -75,7 +76,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
+            <state relative-caret-position="605">
               <caret line="395" column="44" lean-forward="true" selection-start-line="395" selection-start-column="44" selection-end-line="395" selection-end-column="44" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
@@ -98,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-820">
-              <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+            <state relative-caret-position="149">
+              <caret line="226" column="10" lean-forward="true" selection-start-line="226" selection-start-column="10" selection-end-line="226" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -112,10 +113,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/clock.js">
+        <entry file="file://C:/xampp/htdocs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="43" column="51" selection-start-line="43" selection-start-column="51" selection-end-line="43" selection-end-column="51" />
+            <state relative-caret-position="204">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://C:/xampp/htdocs/js/getweatherAccu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -225,10 +235,11 @@
         <option value="&lt;28a405c7-87b4-46cc-8648-dd3f02828f81&gt;/home/pi/FRIDAY-Mirror/FRIDAY-Mirror.py" />
         <option value="$PROJECT_DIR$/functioninterrupts.py" />
         <option value="$PROJECT_DIR$/FRIDAY-Mirror.py" />
-        <option value="C:/xampp/htdocs/index.html" />
         <option value="C:/xampp/htdocs/js/clock.js" />
         <option value="$PROJECT_DIR$/web/js/clock.js" />
         <option value="$PROJECT_DIR$/web/main.html" />
+        <option value="C:/xampp/htdocs/index.html" />
+        <option value="C:/xampp/htdocs/js/getweatherAccu.js" />
       </list>
     </option>
   </component>
@@ -490,7 +501,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32793018" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46134663" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2817955" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.30028328" />
@@ -714,18 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="395" column="44" lean-forward="true" selection-start-line="395" selection-start-column="44" selection-end-line="395" selection-end-column="44" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-            <element signature="e#22324#24341#0" />
-            <marker date="1565353302247" expanded="true" signature="22931:24957" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/xampp/htdocs/js/clock.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -743,10 +742,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="226" column="10" lean-forward="true" selection-start-line="226" selection-start-column="10" selection-end-line="226" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://C:/xampp/htdocs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="137" column="4" selection-start-line="137" selection-start-column="4" selection-end-line="137" selection-end-column="40" />
+        <state relative-caret-position="204">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/xampp/htdocs/js/GetAccuweatherKeys.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="605">
+          <caret line="395" column="44" lean-forward="true" selection-start-line="395" selection-start-column="44" selection-end-line="395" selection-end-column="44" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+            <element signature="e#22324#24341#0" />
+            <marker date="1565353302247" expanded="true" signature="22931:24957" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -757,14 +786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.html">
+    <entry file="file://C:/xampp/htdocs/js/getweatherAccu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-820">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
