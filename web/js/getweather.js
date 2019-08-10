@@ -72,7 +72,7 @@ function fetchweather(){
 		console.log(currenttemp)
 		console.log(weathertext)
 
-		$("#weathertoday").text(currenttemp)
+		$("#weathertoday").text(currenttemp+"°C")
 		$("#descriptiontoday").text(weathertext)
 
 		return makeRequest("http://dataservice.accuweather.com/forecasts/v1/daily/5day/"+citykey+"?metric=true&details=true&apikey="+Weathercreds[0])
@@ -105,7 +105,7 @@ function fetchcurrent(){
 		console.log(currenttemp)
 		console.log(weathertext)
 
-		$("#weathertoday").text(currenttemp)
+		$("#weathertoday").text(currenttemp+"°C")
 		$("#descriptiontoday").text(weathertext)
 	})
 
