@@ -37,6 +37,7 @@ var makeRequest = function (url, method) {
 };
 
 citykey=""
+Weathercreds=[]
 
 ///sick promise chain
 
@@ -81,8 +82,7 @@ function fetchweather(){
 		//console.log(xml)
         ////displaying weather
 		var weather=JSON.parse(xml.responseText)
-		var currentheadline=weather.Headline.Text
-		var currentcategory=weather.Headline.Category
+
 		var fivedayforcast=weather.DailyForecasts
 
 
@@ -95,5 +95,46 @@ function fetchweather(){
 	});
 }
 
+function fetchcurrent(){
+	makeRequest("http://dataservice.accuweather.com/currentconditions/v1/"+citykey+"?details=true&apikey="+Weathercreds[0])
+
+    .then(function (xml) {
+    	var currentconditions = JSON.parse(xml.responseText)
+		currenttemp = currentconditions[0].RealFeelTemperature.Metric.Value
+		weathertext = currentconditions[0].WeatherText
+		console.log(currenttemp)
+		console.log(weathertext)
+
+		$("#weathertoday").text(currenttemp)
+		$("#descriptiontoday").text(weathertext)
+	})
+
+	.catch(function (error) {
+		console.log("error")
+	});
+
+}
+
+function fetch5day(){
+	makeRequest("http://dataservice.accuweather.com/forecasts/v1/daily/5day/"+citykey+"?metric=true&details=true&apikey="+Weathercreds[0])
+	.then(function (xml) {
+    		//console.log(xml)
+        ////displaying weather
+		var weather=JSON.parse(xml.responseText)
+
+		var fivedayforcast=weather.DailyForecasts
+
+
+	})
+
+	.catch(function (error) {
+		console.log("error")
+	});
+
+}
+
+
 fetchweather()
-var getweatherinterval= setInterval(fetchweather,1800000)	//every 30 mins as accuweather only allow 50 requests a day
+
+var getcurrentinterval= setInterval(fetchcurrent,2400000)	//every 30 mins as accuweather only allow 50 requests a day
+var getforcastinterval= setInterval(fetch5day,43200000 )	//every 12 hours
