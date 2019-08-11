@@ -27,6 +27,7 @@
           height: 1rem;
           margin: -.5rem 0 0 -.5rem;
           border: 1px solid currentColor;
+            background: white;
           transform: scale(0);
         }
         #face{
@@ -152,7 +153,7 @@
 		      $("#yousaid").removeClass("fadeout")
 		      $("#fridaysaid").removeClass("fadeout")
 		      $("#face").empty()
-              var maxElements = 60;
+              var maxElements = 30;
             var duration = 1100;
             var toAnimate = [];
             var radius = window.innerWidth < window.innerHeight ? window.innerWidth : window.innerHeight;
@@ -175,7 +176,19 @@
             })();
 
             animate = function(el, i) {
+                num=0
+                 var interval = setInterval(function() {
+
+                    num+=0.1
+                     if (num>1){
+                         num+=-1
+                     }
+
+                 }, 30);
+
+                console.log(num)
               var angle = Math.random() * Math.PI * 2;
+
               anime({
                 targets: el,
                 translateX: [0, Math.cos(angle) * distance],
@@ -231,7 +244,7 @@
 
     </div>
 
-    <div style="padding-top: 30%"></div>
+    <div style="padding-top: 40%"></div>
     <h1 class="headline" id="yousaid"></h1>
     <h2 class="headline" id="fridaysaid"></h2>
 
@@ -249,6 +262,6 @@
     </div>
 
     <script src="js/clock.js"> </script>
-    	<script src="js/GetWeather.js"> </script>
+    	<script src="js/getweather.js"> </script>
 </body>
 </html>
