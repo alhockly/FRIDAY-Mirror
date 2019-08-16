@@ -52,7 +52,7 @@ function fetchweather(){
 
 	})
     .then(function (xml) {
-		console.log(xml)
+		//console.log(xml)
         var locationobj = JSON.parse(xml.responseText)
         var city = locationobj["city"]
         return makeRequest("http://dataservice.accuweather.com/locations/v1/cities/search?q="+city+"&apikey="+Weathercreds[0])
@@ -64,28 +64,13 @@ function fetchweather(){
         return makeRequest("http://dataservice.accuweather.com/currentconditions/v1/"+citykey+"?details=true&apikey="+Weathercreds[0])
 	})
     .then(function (xml) {
-		//console.log(xml)
-
-		var currentconditions = JSON.parse(xml.responseText)
-		currenttemp = currentconditions[0].RealFeelTemperature.Metric.Value
-		weathertext = currentconditions[0].WeatherText
-		console.log(currenttemp)
-		console.log(weathertext)
-
-		$("#weathertoday").text(currenttemp+"°C")
-		$("#descriptiontoday").text(weathertext)
+		fetchcurrent()
 
 		return makeRequest("http://dataservice.accuweather.com/forecasts/v1/daily/5day/"+citykey+"?metric=true&details=true&apikey="+Weathercreds[0])
 
 	})
 	.then(function (xml) {
-		//console.log(xml)
-        ////displaying weather
-		var weather=JSON.parse(xml.responseText)
-
-		var fivedayforcast=weather.DailyForecasts
-
-
+		fetch5day()
 
 	})
 
@@ -102,8 +87,16 @@ function fetchcurrent(){
     	var currentconditions = JSON.parse(xml.responseText)
 		currenttemp = currentconditions[0].RealFeelTemperature.Metric.Value
 		weathertext = currentconditions[0].WeatherText
+		rainchance = currentconditions[0].HasPrecipitation
+		UVindex = currentconditions[0].UVIndex
+
+
+
 		console.log(currenttemp)
 		console.log(weathertext)
+		console.log("rain?",rainchance)
+		console.log("UV index",UVindex)
+
 
 		$("#weathertoday").text(currenttemp+"°C")
 		$("#descriptiontoday").text(weathertext)
@@ -123,7 +116,19 @@ function fetch5day(){
 		var weather=JSON.parse(xml.responseText)
 
 		var fivedayforcast=weather.DailyForecasts
+		var days = new Array(5);
+		i=0
+		while(i<5){
+			day=fivedayforcast[i]
+			rainchance=day.Day.RainProbability
+			weather={}
+			weather.rainchance=rainchance
+			days[i]=weather
+			i++;
+		}
+		console.log(days)
 
+		$("#todaysrainchance").text(days[0].rainchance+"%")
 
 	})
 

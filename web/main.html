@@ -79,6 +79,9 @@
             right: 5%;
             color: white;
             font-family: 'Major Mono Display', monospace;
+
+        }
+        #clock{
             font-size: 2em;
         }
         #loadingbar{
@@ -96,6 +99,17 @@
         #weathertoday{
             font-size: 3em;
         }
+        #todaysrainchance{
+            font-size: 3em;
+        }
+        .todayrain{
+            padding-left: 12%;
+        }
+        #day{
+            font-size: 14px;
+            text-align: center;
+        }
+
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -244,22 +258,30 @@
 
     </div>
 
-    <div style="padding-top: 40%"></div>
+    <div style="padding-top: 35%"></div>
     <h1 class="headline" id="yousaid"></h1>
     <h2 class="headline" id="fridaysaid"></h2>
 
-    <div class="clockdiv fixeddiv" id="clock">
 
+    <div class="clockdiv fixeddiv">
+      <div id="clock"></div>
+        <div id="day"></div>
     </div>
 
 
 
 
     <div class="fixeddiv" id="weather">
+        <div style="float: left">
         <div id="weathertoday"></div>
         <div id="descriptiontoday"></div>
+        </div>
+        <div class="todayrain">
+        <div id="todaysrainchance"></div>
+        <div>Rain chance</div>
+        </div>
         <div id="weatherweek"></div>
-    </div>
+
 
     <script src="js/clock.js"> </script>
     	<script src="js/getweather.js"> </script>

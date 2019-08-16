@@ -4,14 +4,14 @@ var dateobj = new Date()
 window.onload = function(){
 	time();
 	//meridian();
-	//whatDay();
+	whatDay();
 	//getdate();
 	//uniWeek();
 	setInterval(function(){
 		dateobj = new Date()
 		time();
 		//meridian();
-		//whatDay();
+		whatDay();
 		//getdate();
 	}, 60000);
 };
@@ -65,19 +65,20 @@ function meridian(){
 
 //lights up what day of the week it is
 function whatDay(){
-	var currentDay = dateobj.getDay();
 	
-	if(currentDay==-1){currentDay=6;}
-	if(currentDay==0){currentDay=6}
-	else{currentDay=currentDay-1;}
+	var weekday = new Array(7);
+	weekday[0] =  "Sunday";
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = "Saturday";
+
+	var day = weekday[dateobj.getDay()];
 	
-	var days = document.getElementsByClassName("day");
-	//iterates through all divs with a class of "day"
-	for (var x in days){
-		//list of classes in current div
-		var classArr = days[x].classList;
-		
-		(classArr !== undefined) && ((x == currentDay) ? classArr.add("light-on") : classArr.remove("light-on"));
-	}
+	$("#day").text(addZero(dateobj.getDate())+" "+day)
+
+
 }
 
