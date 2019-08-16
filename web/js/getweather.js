@@ -111,7 +111,7 @@ function fetchcurrent(){
 function fetch5day(){
 	makeRequest("http://dataservice.accuweather.com/forecasts/v1/daily/5day/"+citykey+"?metric=true&details=true&apikey="+Weathercreds[0])
 	.then(function (xml) {
-    		//console.log(xml)
+		console.log(xml)
         ////displaying weather
 		var weather=JSON.parse(xml.responseText)
 
@@ -123,17 +123,29 @@ function fetch5day(){
 			rainchance=day.Day.RainProbability
 			weather={}
 			weather.rainchance=rainchance
+			weather.mintemp=day.RealFeelTemperature.Minimum.Value
+			weather.maxtemp=day.RealFeelTemperature.Maximum.Value
+			weather.desc=day.Day.ShortPhrase
+			weather.moonphase=day.Moon.Phase
 			days[i]=weather
+
+			var weatherday = document.createElement("div")
+			weatherday.id="weatherday"+i
+			weatherday.className="weatherday"
+			weatherday.innerHTML = weather.mintemp.toFixed()+" - "+weather.maxtemp.toFixed()+"°C  "+weather.desc+" "+weather.rainchance+"%"
+			document.getElementById("weatherweek").appendChild(weatherday)
 			i++;
 		}
 		console.log(days)
 
 		$("#todaysrainchance").text(days[0].rainchance+"%")
 
+
+
 	})
 
 	.catch(function (error) {
-		console.log("error")
+		console.log("error",error)
 	});
 
 }
