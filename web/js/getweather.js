@@ -117,6 +117,9 @@ function fetch5day(){
 
 		var fivedayforcast=weather.DailyForecasts
 		var days = new Array(5);
+
+		$("#weatherweek").empty()
+
 		i=0
 		while(i<5){
 			day=fivedayforcast[i]
