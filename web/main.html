@@ -175,26 +175,25 @@
 		      $("#fridaysaid").removeClass("fadeout")
 		      $("#face").empty()
               var maxElements = 30;
-            var duration = 1100;
-            var toAnimate = [];
-            var radius = window.innerWidth < window.innerHeight ? window.innerWidth : window.innerHeight;
-            var radius = 200;
-            var distance = radius / 4 <= 150 ? 150 : radius / 4;
-            var colors = ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C'];
+		      var duration = 1100;
+		      var toAnimate = [];
+		      var radius = window.innerWidth < window.innerHeight ? window.innerWidth : window.innerHeight;
+		      var radius = 200;
+		      var distance = radius / 4 <= 150 ? 150 : radius / 4;
+		      var colors = ['#FF1461', '#18FF92', '#5A87FF', '#FBF38C'];
 
-
-            var createElements = (function() {
+              var createElements = (function() {
               var fragment = document.createDocumentFragment();
               for (var i = 0; i < maxElements; i++) {
-                var el = document.createElement('div');
-                el.classList.add('particule');
-                el.style.color = colors[anime.random(0, 3)];
-                el.style.color = "#f5f5f5";
-                toAnimate.push(el);
-                fragment.appendChild(el);
+                  var el = document.createElement('div');
+                  el.classList.add('particule');
+                  el.style.color = colors[anime.random(0, 3)];
+                  el.style.color = "#f5f5f5";
+                  toAnimate.push(el);
+                  fragment.appendChild(el);
               }
               document.getElementById("face").appendChild(fragment);
-            })();
+              })();
 
             animate = function(el, i) {
                 num=0
