@@ -1,5 +1,6 @@
 export DISPLAY=:0.0
 killall chromium-browser
+killall keepchromiumopen.sh
 sudo killall python3
 
 sudo rm -rf ~/.cache/chromium
