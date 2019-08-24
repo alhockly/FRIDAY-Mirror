@@ -7,7 +7,7 @@ do
         then
                 echo "opening chrome"
 
-                chromium-browser --kiosk --incognito http://localhost:8000/main.html
+                ./start.sh
                 sleep 10
 
         fi
