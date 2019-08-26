@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f381709-42d5-4379-a8b0-0e57bfe28d5d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web/js/Isspassover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FRIDAY-Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/FRIDAY-Mirror.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/getweather.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/getweather.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/getweatherAccu.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/main.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,17 +40,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="1948" />
-          <entry key="js" value="2937" />
-          <entry key="py" value="3645" />
+          <entry key="html" value="1961" />
+          <entry key="js" value="2943" />
+          <entry key="py" value="3670" />
           <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1948" />
-          <entry key="JavaScript" value="2937" />
-          <entry key="Python" value="3645" />
+          <entry key="HTML" value="1961" />
+          <entry key="JavaScript" value="2943" />
+          <entry key="Python" value="3670" />
           <entry key="XML" value="13" />
         </counts>
       </usages-collector>
@@ -83,25 +78,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="570" column="83" selection-start-line="570" selection-start-column="83" selection-end-line="570" selection-end-column="83" />
+            <state relative-caret-position="240">
+              <caret line="578" column="46" lean-forward="true" selection-start-line="578" selection-start-column="46" selection-end-line="578" selection-end-column="46" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
-                <marker date="1566854525168" expanded="true" signature="18931:19639" ph="..." />
-                <marker date="1566854525168" expanded="true" signature="23936:25962" ph="..." />
+                <marker date="1566855742743" expanded="true" signature="18931:19604" ph="..." />
+                <marker date="1566855742743" expanded="true" signature="23901:25927" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/main.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
-              <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+              <caret line="134" column="26" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -126,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/Isspassover.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+            <state relative-caret-position="161">
+              <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
               <folding>
                 <element signature="e#503#1207#0" />
               </folding>
@@ -231,10 +226,10 @@
         <option value="C:/xampp/htdocs/index.html" />
         <option value="C:/xampp/htdocs/js/getweather.js" />
         <option value="$PROJECT_DIR$/web/js/clock.js" />
-        <option value="$PROJECT_DIR$/FRIDAY-Mirror.py" />
         <option value="$PROJECT_DIR$/web/js/getweather.js" />
         <option value="$PROJECT_DIR$/web/js/Isspassover.js" />
         <option value="$PROJECT_DIR$/web/main.html" />
+        <option value="$PROJECT_DIR$/FRIDAY-Mirror.py" />
       </list>
     </option>
   </component>
@@ -779,18 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="570" column="83" selection-start-line="570" selection-start-column="83" selection-end-line="570" selection-end-column="83" />
-          <folding>
-            <element signature="e#24#34#0" expanded="true" />
-            <marker date="1566854525168" expanded="true" signature="18931:19639" ph="..." />
-            <marker date="1566854525168" expanded="true" signature="23936:25962" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/js/getweather.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -803,8 +786,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Isspassover.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="69" column="39" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        <state relative-caret-position="161">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
           <folding>
             <element signature="e#503#1207#0" />
           </folding>
@@ -814,11 +797,23 @@
     <entry file="file://$PROJECT_DIR$/web/main.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="134" column="12" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="12" />
+          <caret line="134" column="26" selection-start-line="134" selection-start-column="26" selection-end-line="134" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="578" column="46" lean-forward="true" selection-start-line="578" selection-start-column="46" selection-end-line="578" selection-end-column="46" />
+          <folding>
+            <element signature="e#24#34#0" expanded="true" />
+            <marker date="1566855742743" expanded="true" signature="18931:19604" ph="..." />
+            <marker date="1566855742743" expanded="true" signature="23901:25927" ph="..." />
           </folding>
         </state>
       </provider>

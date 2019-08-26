@@ -574,9 +574,9 @@ class Webfunctions():
             response.raise_for_status()
 
         except HTTPError as http_err:
-            print(f'HTTP error occurred: {http_err}')  # Python 3.6
+            print("HTTP error occurred",http_err)
         except Exception as err:
-            print(f'Other error occurred: {err}')  # Python 3.6
+            print("Other error occurred:",err)
         else:
             print(response.text)
             with open('web/iss.json', 'w') as outfile:
