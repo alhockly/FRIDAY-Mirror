@@ -13,7 +13,7 @@ import soundfile
 from forex_python.bitcoin import BtcConverter
 import multiprocessing
 import json
-
+from requests.exceptions import HTTPError
 import pyaudio
 import wave
 import simpleaudio as sa
@@ -562,6 +562,28 @@ class Webfunctions():
         with open('web/location.json', 'w') as outfile:
             json.dump(data, outfile)
 
+    def getisspassoverjson(self):
+        global latlong
+        if latlong==None:
+            self.getlocation()
+
+        try:
+            response = requests.get("http://api.open-notify.org/iss-pass.json?n=100&lat=+"+str(latlong[0])+"&lon="+str(latlong[1]))
+
+            # If the response was successful, no Exception will be raised
+            response.raise_for_status()
+
+        except HTTPError as http_err:
+            print(f'HTTP error occurred: {http_err}')  # Python 3.6
+        except Exception as err:
+            print(f'Other error occurred: {err}')  # Python 3.6
+        else:
+            print(response.text)
+            with open('web/iss.json', 'w') as outfile:
+                json.dump(response.json(), outfile)
+
+
+
 
     def gettemp(self):
         if latlong==None:
@@ -731,6 +753,7 @@ if __name__ == '__main__':
     audresp = Audioresponse()
 
     Webfunctions().getlocation()
+    Webfunctions().getisspassoverjson()
 
 
     nodeman.scanfornodes()

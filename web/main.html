@@ -20,6 +20,7 @@
             background-color: black;
             overflow: hidden;
             font-family: 'Roboto', sans-serif;
+            color: white;
         }
         body{
             background-color: black;
@@ -120,8 +121,18 @@
         }
         .weatherday{
             padding: 10px 0px;
-            font-family:CodeSaver
+            font-family:CodeSaver;
+            font-size:21px;
+        }
+        #isspasses{
+            color: white;
+            right:5%;
+            top:30%;
+            font-family:CodeSaver;
 
+        }
+        .isspass{
+            padding: 5px 0px;
         }
 
 
@@ -301,9 +312,17 @@
         </div>
         </div>
         <div id="weatherweek"></div>
+    </div>
 
+
+    <div class="fixeddiv" id="isspasses" style="text-align: center">
+     <div >
+            ISS passovers
+    </div>
+    </div>
 
     <script src="js/clock.js"> </script>
     	<script src="js/getweather.js"> </script>
+    	<script src="js/isspassover.js"> </script>
 </body>
 </html>

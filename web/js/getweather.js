@@ -148,7 +148,7 @@ function fetch5day(){
 			if (day>6){
 				day=day-6;
 			}
-			weatherday.innerHTML = weekday[day].slice(0,3)+"| "+weather.mintemp.toFixed()+"-"+weather.maxtemp.toFixed()+"°C  "+weather.desc+" "+weather.rainchance+"%"
+			weatherday.innerHTML = weekday[day].slice(0,3)+" | "+weather.mintemp.toFixed()+"-"+weather.maxtemp.toFixed()+"°C  "+weather.desc+" "+weather.rainchance+"%"
 			document.getElementById("weatherweek").appendChild(weatherday)
 			i++;
 		}
