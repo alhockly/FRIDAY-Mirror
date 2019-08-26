@@ -1,3 +1,12 @@
+var weekday = new Array(7);
+	weekday[0] =  "Sunday";
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = "Saturday";
+
 var makeRequest = function (url, method) {
 
 	// Create the XHR request
@@ -135,7 +144,11 @@ function fetch5day(){
 			var weatherday = document.createElement("div")
 			weatherday.id="weatherday"+i
 			weatherday.className="weatherday"
-			weatherday.innerHTML = weather.mintemp.toFixed()+" - "+weather.maxtemp.toFixed()+"°C  "+weather.desc+" "+weather.rainchance+"%"
+			var day = dateobj.getDay()+i+1
+			if (day>6){
+				day=day-6;
+			}
+			weatherday.innerHTML = weekday[day].slice(0,3)+"| "+weather.mintemp.toFixed()+"-"+weather.maxtemp.toFixed()+"°C  "+weather.desc+" "+weather.rainchance+"%"
 			document.getElementById("weatherweek").appendChild(weatherday)
 			i++;
 		}
