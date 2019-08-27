@@ -5,7 +5,7 @@ do
 
         if ! [[ $(pidof /usr/lib/chromium-browser/chromium-browser) ]];
         then
-                echo "opening chrome"
+                echo "restarting Mirror due to chrome crash/close"
 
                 ./start.sh
                 sleep 10

@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7f381709-42d5-4379-a8b0-0e57bfe28d5d" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/FRIDAY-Mirror.py" beforeDir="false" afterPath="$PROJECT_DIR$/FRIDAY-Mirror.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/iss.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/GetAccuweatherKeys.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/Isspassover.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/Isspassover.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keepchromiumopen.sh" beforeDir="false" afterPath="$PROJECT_DIR$/keepchromiumopen.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/start.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,7 @@
     <SUITE FILE_PATH="coverage/FRIDAY_Mirror$functioninterrupts.coverage" NAME="functioninterrupts Coverage Results" MODIFIED="1565352914447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FRIDAY_Mirror$googlespeechexample.coverage" NAME="googlespeechexample Coverage Results" MODIFIED="1564010240523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FRIDAY_Mirror$minima.coverage" NAME="minima Coverage Results" MODIFIED="1564942740135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/FRIDAY_Mirror$FRIDAY_Mirror.coverage" NAME="FRIDAY-Mirror Coverage Results" MODIFIED="1566914764673" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/FRIDAY_Mirror$FRIDAY_Mirror.coverage" NAME="FRIDAY-Mirror Coverage Results" MODIFIED="1566914913290" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FRIDAY_Mirror$spotifylib.coverage" NAME="spotifylib Coverage Results" MODIFIED="1564442696933" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/FRIDAY_Mirror$porcupine_hotword.coverage" NAME="porcupine_hotword Coverage Results" MODIFIED="1563701233510" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
@@ -44,7 +43,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="1961" />
-          <entry key="js" value="2946" />
+          <entry key="js" value="2947" />
           <entry key="py" value="3683" />
           <entry key="xml" value="13" />
         </counts>
@@ -52,7 +51,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="1961" />
-          <entry key="JavaScript" value="2946" />
+          <entry key="JavaScript" value="2947" />
           <entry key="Python" value="3683" />
           <entry key="XML" value="13" />
         </counts>
@@ -81,10 +80,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
+            <state relative-caret-position="6037">
               <caret line="583" column="31" selection-start-line="583" selection-start-column="31" selection-end-line="583" selection-end-column="31" />
               <folding>
                 <element signature="e#24#34#0" expanded="true" />
@@ -95,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
-              <caret line="320" column="10" lean-forward="true" selection-start-line="320" selection-start-column="10" selection-end-line="320" selection-end-column="10" />
+            <state relative-caret-position="300">
+              <caret line="324" column="44" lean-forward="true" selection-start-line="324" selection-start-column="44" selection-end-line="324" selection-end-column="44" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -124,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/Isspassover.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+            <state relative-caret-position="204">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
               <folding>
                 <element signature="e#503#1207#0" />
               </folding>
@@ -222,8 +221,8 @@
         <option value="$PROJECT_DIR$/web/js/clock.js" />
         <option value="$PROJECT_DIR$/web/js/getweather.js" />
         <option value="$PROJECT_DIR$/web/main.html" />
-        <option value="$PROJECT_DIR$/web/js/Isspassover.js" />
         <option value="$PROJECT_DIR$/FRIDAY-Mirror.py" />
+        <option value="$PROJECT_DIR$/web/js/Isspassover.js" />
       </list>
     </option>
   </component>
@@ -766,7 +765,7 @@
     <entry file="file://$PROJECT_DIR$/web/location.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/iss.json">
+    <entry file="file://$PROJECT_DIR$/web/Iss.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="4448" lean-forward="true" selection-start-column="4448" selection-end-column="4448" />
@@ -775,18 +774,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/GetAccuweatherKeys.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="320" column="10" lean-forward="true" selection-start-line="320" selection-start-column="10" selection-end-line="320" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/getweather.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -800,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/Isspassover.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
+        <state relative-caret-position="204">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
           <folding>
             <element signature="e#503#1207#0" />
           </folding>
@@ -810,12 +797,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FRIDAY-Mirror.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
+        <state relative-caret-position="6037">
           <caret line="583" column="31" selection-start-line="583" selection-start-column="31" selection-end-line="583" selection-end-column="31" />
           <folding>
             <element signature="e#24#34#0" expanded="true" />
             <marker date="1566914764662" expanded="true" signature="18931:19636" ph="..." />
             <marker date="1566914764662" expanded="true" signature="23933:25959" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="324" column="44" lean-forward="true" selection-start-line="324" selection-start-column="44" selection-end-line="324" selection-end-column="44" />
+          <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

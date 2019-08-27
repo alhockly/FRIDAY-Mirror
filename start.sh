@@ -7,7 +7,7 @@ sudo nohup python3 FRIDAY-Mirror.py &
 sleep 10
 chromium-browser --kiosk --incognito http://localhost:8000/main.html &
 sleep 5
-if ! [[ $(pidof keepchromiumopen.sh) ]];
+if ! [[ $(pgrep -f keepchromiumopen.sh) ]];
         then
 	./keepchromiumopen.sh &	
 		
