@@ -579,8 +579,9 @@ class Webfunctions():
             print("Other error occurred:",err)
         else:
             print(response.text)
-            with open('web/iss.json', 'w') as outfile:
+            with open('web/Iss.json', 'w') as outfile:
                 json.dump(response.json(), outfile)
+                outfile.close()
 
 
 

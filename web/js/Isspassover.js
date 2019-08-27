@@ -48,32 +48,32 @@ var makeRequest = function (url, method) {
 
 
 
-    makeRequest("iss.json")
+makeRequest('Iss.json')
 
-    .then(function (xml) {
-		console.log(xml)
-        var passoverdata = JSON.parse(xml.responseText)
+.then(function (xml) {
+    console.log(xml)
+    var passoverdata = JSON.parse(xml.responseText)
 
-        i=0
-        added=0
-        while(added<6){
-            risetime = passoverdata.response[i].risetime
+    i=0
+    added=0
+    while(added<6){
+        risetime = passoverdata.response[i].risetime
 
-            var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
-            d.setUTCSeconds(risetime);
-            console.log(d)
-            if(d.getHours()>17 || d.getHours()<2){
+        var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
+        d.setUTCSeconds(risetime);
+        console.log(d)
+        if(d.getHours()>17 || d.getHours()<2){
 
-                var datestring =("00" + d.getDate()).slice (-2)+" "+months[d.getMonth()]+" - "+("00" + d.getHours()).slice (-2)+":"+("00" + d.getMinutes()).slice (-2)+":"+("00" + d.getSeconds()).slice (-2)
-                var pass = document.createElement("div")
-                pass.innerHTML=datestring
-                pass.className="isspass"
-                document.getElementById("isspasses").appendChild(pass)
-                added++;
-            }
-
-
-            i=i+1;
+            var datestring =("00" + d.getDate()).slice (-2)+" "+months[d.getMonth()]+" - "+("00" + d.getHours()).slice (-2)+":"+("00" + d.getMinutes()).slice (-2)+":"+("00" + d.getSeconds()).slice (-2)
+            var pass = document.createElement("div")
+            pass.innerHTML=datestring
+            pass.className="isspass"
+            document.getElementById("isspasses").appendChild(pass)
+            added++;
         }
 
-	})
+
+        i=i+1;
+    }
+
+})
