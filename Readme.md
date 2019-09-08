@@ -3,6 +3,9 @@
 I had another project called FRIDAY-JAVA, this is basically that but re-written in python and with a GUI
 
 
+![alt text](https://raw.githubusercontent.com/alhockly/FRIDAY-Mirror/master/Servingsuggestion.jpg)
+
+
 This project will probably be moved over x86 hardware due to incompatibilities and the fact that the rpi isn't really powerful enough for voice recognition and driving a display
 
 #Steps#
