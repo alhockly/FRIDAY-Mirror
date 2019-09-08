@@ -2,6 +2,9 @@
 
 I had another project called FRIDAY-JAVA, this is basically that but re-written in python and with a GUI
 
+
+This project will probably be moved over x86 hardware due to incompatibilities and the fact that the rpi isn't really powerful enough for voice recognition and driving a display
+
 #Steps#
 1. install libraries
 	sudo pip3 install selenium selenium-requests numpy eel forex-python simpleaudio kamene netaddr geocoder pyaudio SpeechRecognition
@@ -32,14 +35,3 @@ I had another project called FRIDAY-JAVA, this is basically that but re-written 
 2. start FRIDAY-Mirror.py
 3. open browser to http://localhost:8000/web/main.html
 
-
-
-ChromeDriver is required. For rpi use arm builds 
-https://launchpad.net/ubuntu/trusty/+package/chromium-chromedriver 
-
-
-chromedriver/chrome compatibilities (both required)
-http://appium.io/docs/en/writing-running-appium/web/chromedriver/
-(Im considering using firefox driver to avoid install both tho??)
-
-I CANNOT FIND AN ARM BUILD OF CHROMEDRIVER AND CHROMIUM THAT ARE COMPATIBLE WITH EACHOTHER OMGGGGG 
