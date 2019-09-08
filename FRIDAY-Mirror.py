@@ -346,6 +346,7 @@ class AudioRecognition(Thread):
             if any(verb in speech for verb in node.verblist) and any(val in speech for val in node.verblist) and node.name in speech:     ###if speech contains a node name and one of its verbs and one of its verbs
                 #audresp.flags.append("nodecommand")
 
+                selectedvalue=node.defaultval
 
                 for verb in node.verblist:  ##find which verb it was                    ##detect elements
                     if verb in speech:
@@ -356,14 +357,23 @@ class AudioRecognition(Thread):
                         selectedvalue=val
                         break
 
-                audresp.verbs.append(selectedvalue)                                     ##append to audio response object
-                audresp.nodes.append(node)
-                audresp.vals.append(selectedvalue)
-                print("ayy u talking about",node.name,"and u tryna",selectedverb,selectedvalue)
+                if selectedvalue==None:
+                    print ("detected requested device but instruction is unknown")
 
-                eel.stoplistening()
-                nodeman.send(node.name,selectedverb,selectedvalue)
-                return
+
+                else:
+
+
+                    audresp.verbs.append(selectedvalue)                                     ##append to audio response object
+                    audresp.nodes.append(node)
+
+
+                    audresp.vals.append(selectedvalue)
+                    print("ayy u talking about",node.name,"and u tryna",selectedverb,selectedvalue)
+
+                    eel.stoplistening()
+                    nodeman.send(node.name,selectedverb,selectedvalue)
+                    return
 
 
         ####resolution####I think ideally the above would be filters that act on the audioResponse obj the above below
@@ -500,6 +510,7 @@ class NodeManager(Thread):
 
         #print(ans.summary())
         macs=[]
+        onlinecount=0
         for device in ans.res:
             mac=device[1].payload.hwsrc
             ip=device[1].payload.fields["psrc"]
@@ -510,6 +521,10 @@ class NodeManager(Thread):
                     node.online=True
                     node.ip=ip
                     print(node.name,"node is online")
+                    onlinecount+1
+
+        if onlinecount==0:
+            print("No IoT devices found... Is this correct for your setup?")
 
 
 
@@ -543,6 +558,7 @@ class Node():
         self.verblist=verblist
         self.vallist=vallist
         self.online=None
+        self.defaultval="on "      ###TODO Fix asap by adding default verbs vals to xml
 
 
 
@@ -578,7 +594,6 @@ class Webfunctions():
         except Exception as err:
             print("Other error occurred:",err)
         else:
-            print(response.text)
             with open('web/Iss.json', 'w') as outfile:
                 json.dump(response.json(), outfile)
                 outfile.close()
