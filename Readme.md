@@ -12,9 +12,15 @@ This project will probably be moved over x86 hardware due to incompatibilities a
 1. install libraries
 	sudo pip3 install selenium selenium-requests numpy eel forex-python simpleaudio kamene netaddr geocoder pyaudio SpeechRecognition
 
+(PortAudio is a C library required for pyaudio, on windows you;ll have to install from here: http://portaudio.com/download.html)
+	
+	On linux/rpi install from apt-get as below
+
 	sudo apt-get update &&
 	sudo apt-get upgrade &&
 	sudo apt-get install portaudio19-dev tcpdump flac libatlas-base-dev python-pyaudio python3-pyaudio sox libpcre3 libpcre3-dev libatlas-base-dev -y
+	
+
 
 2.Compile a supported swig version (3.0.10 or above) and snowboy for python3
 	wget https://sourceforge.net/projects/swig/files/swig/swig-3.0.10/swig-3.0.10.tar.gz &&
