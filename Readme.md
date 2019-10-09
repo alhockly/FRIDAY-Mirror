@@ -12,7 +12,7 @@ This project will probably be moved over x86 hardware due to incompatibilities a
 1. install libraries
 	sudo pip3 install selenium selenium-requests numpy eel forex-python simpleaudio kamene netaddr geocoder pyaudio SpeechRecognition
 
-(PortAudio is a C library required for pyaudio, on windows you;ll have to install from here: https://people.csail.mit.edu/hubert/pyaudio/packages/ ??)
+(PortAudio is a C library required for pyaudio, on windows you'll have to install the .whl from here: https://people.csail.mit.edu/hubert/pyaudio/packages/ ??)
 	
 	On linux/rpi install from apt-get as below
 
