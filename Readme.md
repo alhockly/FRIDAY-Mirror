@@ -21,7 +21,6 @@ This project will probably be moved over x86 hardware due to incompatibilities a
 	sudo apt-get install portaudio19-dev tcpdump flac libatlas-base-dev python-pyaudio python3-pyaudio sox libpcre3 libpcre3-dev libatlas-base-dev -y
 	
 
-
 2.Compile a supported swig version (3.0.10 or above) and snowboy for python3
 	wget https://sourceforge.net/projects/swig/files/swig/swig-3.0.10/swig-3.0.10.tar.gz &&
 	tar -xvzf swig-3.0.10.tar.gz &&
@@ -38,6 +37,9 @@ This project will probably be moved over x86 hardware due to incompatibilities a
 	git clone https://github.com/Kitt-AI/snowboy &&
 	cd snowboy/swig/Python3 && make
 
+3. Hardware stuff
+	You can use pretty much any monitor that is flat(ish). Im using a decapitated laptop screen with LVDS driver seperate. 2 way 		acrylic can be glued on top but I used command velcro strips so that I can take this thing apart when I move or need the parts.
+	If the monitor you use has poor black values then I highly reccomend placing a 0.9 ND gel filter between the monitor and the 		acrylic to reduce emitted light (especially in the dark). if 0.9 filter is expensive you can also use a 0.3 nd and 0.6 nd filter 	together. The exact filter nessessary does depend on the screen being used so bare that in mind
 
 ##Start Mirror##
 1. ssh in and `export DISPLAY=:0.0`
